@@ -561,16 +561,16 @@ const canaryCove: SiteSnapshot = {
   },
   leads: {
     // Real Formspree data — Canary Cove Contact (xvzarybk) + Booking (xqeqllek)
-    // forms, exported 2026-05-26. Bot/spam submissions (gibberish names, random
-    // "guest counts") and a test entry have been excluded. Repeat senders are
-    // collapsed to one row per person; submission counts noted inline.
+    // forms, exported 2026-06-19. Bot/spam submissions (gibberish names, random
+    // generated text/counts) and a test entry have been excluded. Repeat senders
+    // are collapsed to one row per person; submission counts noted inline.
     kpis: [
-      { label: "Total inquiries", value: "13", caption: "real submissions · both forms" },
-      { label: "Unique leads", value: "8", caption: "distinct people" },
-      { label: "Booking parties", value: "6", caption: "requested specific travel dates" },
-      { label: "Spam filtered", value: "7", caption: "bot submissions blocked" },
+      { label: "Total inquiries", value: "16", caption: "real submissions · both forms" },
+      { label: "Unique leads", value: "10", caption: "distinct people" },
+      { label: "Booking parties", value: "7", caption: "requested specific travel dates" },
+      { label: "Spam filtered", value: "11", caption: "bot submissions blocked" },
     ],
-    trend: countsSeries("leads", "2026-04-20", "2026-05-26", {
+    trend: countsSeries("leads", "2026-04-20", "2026-06-13", {
       "2026-04-20": 1, // Lori Devine (contact)
       "2026-04-21": 1, // Val Kaye (contact)
       "2026-04-24": 3, // Rich Schones + Val Kaye + erin jones
@@ -581,8 +581,34 @@ const canaryCove: SiteSnapshot = {
       "2026-05-20": 1, // Bryant Craig (contact)
       "2026-05-25": 1, // Cyndra Crossman (booking)
       "2026-05-26": 1, // Bryant Craig (booking)
+      "2026-06-01": 1, // Bryant Craig (contact follow-up)
+      "2026-06-03": 1, // Natalie Peterson (contact)
+      "2026-06-13": 1, // Lyles Eddins (booking)
     }),
     recent: [
+      {
+        id: "virginialyles",
+        name: "Lyles Eddins",
+        email: "virginialyles@gmail.com",
+        channel: "booking",
+        stayDates: "Mar 19–25, 2027",
+        party: "4 adults + 4 children",
+        message: "Family trip.",
+        submittedAt: "2026-06-13T18:08:32.000Z",
+        status: "new",
+      },
+      {
+        id: "natalie-peterson",
+        name: "Natalie Peterson",
+        email: "nataliempeterson@gmail.com",
+        channel: "contact",
+        stayDates: "Feb 11–15, 2027",
+        party: "6 women",
+        message:
+          "50th birthday trip; asking for rates, included items, groceries, and excursion cost estimates.",
+        submittedAt: "2026-06-03T10:51:52.000Z",
+        status: "new",
+      },
       {
         id: "craigdvm",
         name: "Bryant Craig",
@@ -590,10 +616,10 @@ const canaryCove: SiteSnapshot = {
         channel: "booking",
         stayDates: "Sept 12–19, 2026",
         party: "6 adults",
-        submissions: 4,
+        submissions: 5,
         message:
-          "Slow pace: fishing, snorkeling, and sight-seeing with friends.",
-        submittedAt: "2026-05-26T15:39:23.000Z",
+          "Repeated booking request and contact follow-up; checking status after submitting requests and calling.",
+        submittedAt: "2026-06-01T12:25:53.000Z",
         status: "qualified",
       },
       {

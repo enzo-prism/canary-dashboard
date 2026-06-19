@@ -128,7 +128,7 @@ export default async function SitePage({
 
               <Panel
                 title="Inquiry volume"
-                description="Daily submissions across the Formspree Contact and Booking forms, Apr 20 – May 26, 2026 (spam excluded)."
+                description="Daily submissions across the Formspree Contact and Booking forms, Apr 20 – Jun 13, 2026 (spam excluded)."
                 icon={MessageSquare}
               >
                 <LeadsTrendChart data={leads.trend} />
