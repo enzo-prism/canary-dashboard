@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { LayoutGrid, MessageSquare, Menu } from "lucide-react";
+import { LayoutGrid, Menu } from "lucide-react";
 import { SITES } from "@/lib/sites";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
@@ -15,37 +15,36 @@ function NavContent({ onNavigate }: { onNavigate?: () => void }) {
   const overviewActive = pathname === "/";
 
   return (
-    <div className="flex h-full flex-col gap-1">
-      {/* Brand */}
-      <div className="px-3 pt-5 pb-4">
-        <Link href="/" onClick={onNavigate} className="flex items-center gap-2.5">
-          <div className="flex size-9 items-center justify-center rounded-lg bg-primary text-primary-foreground font-semibold">
+    <div className="flex h-full flex-col">
+      <div className="px-6 pt-10 pb-6">
+        <Link href="/" onClick={onNavigate} className="flex items-center gap-4">
+          <div className="flex size-8 items-center justify-center rounded-md bg-primary text-primary-foreground text-sm font-semibold">
             L
           </div>
           <div className="leading-tight">
-            <div className="text-sm font-semibold">Listwin Portfolio</div>
-            <div className="text-xs text-muted-foreground">Executive Dashboard</div>
+            <div className="text-sm font-semibold">Listwin</div>
+            <div className="text-xs text-muted-foreground">Executive dashboard</div>
           </div>
         </Link>
       </div>
 
-      <nav className="flex flex-1 flex-col gap-1 px-3">
+      <nav className="flex flex-1 flex-col gap-2 px-4">
         <Link
           href="/"
           onClick={onNavigate}
           className={cn(
-            "flex items-center gap-2.5 rounded-md px-2.5 py-2 text-sm transition-colors",
+            "flex items-center gap-4 rounded-md px-2 py-2 text-sm transition-colors",
             overviewActive
               ? "bg-sidebar-accent text-sidebar-accent-foreground font-medium"
               : "text-muted-foreground hover:bg-sidebar-accent/50 hover:text-foreground",
           )}
         >
           <LayoutGrid className="size-4 shrink-0" />
-          Portfolio overview
+          Dashboard
         </Link>
 
-        <div className="mt-4 mb-1 px-2.5 text-xs font-medium uppercase tracking-wide text-muted-foreground/70">
-          Websites
+        <div className="mt-6 mb-2 px-2 text-xs font-medium uppercase tracking-[0.06em] text-muted-foreground">
+          Projects
         </div>
 
         {SITES.map((site) => {
@@ -57,7 +56,7 @@ function NavContent({ onNavigate }: { onNavigate?: () => void }) {
               href={href}
               onClick={onNavigate}
               className={cn(
-                "group flex items-center gap-2.5 rounded-md px-2.5 py-2 transition-colors",
+                "group flex items-center gap-4 rounded-md px-2 py-2 transition-colors",
                 active
                   ? "bg-sidebar-accent text-sidebar-accent-foreground"
                   : "hover:bg-sidebar-accent/50",
@@ -70,17 +69,14 @@ function NavContent({ onNavigate }: { onNavigate?: () => void }) {
                 </span>
                 <span className="block truncate text-xs text-muted-foreground">{site.domain}</span>
               </span>
-              {site.hasLeads && (
-                <MessageSquare className="size-3.5 shrink-0 text-muted-foreground/70" />
-              )}
             </Link>
           );
         })}
       </nav>
 
-      <div className="mt-auto border-t px-4 py-3.5">
+      <div className="mt-auto border-t px-6 py-6">
         <div className="text-xs font-medium">Don Listwin</div>
-        <div className="text-xs text-muted-foreground">Managed by Prism</div>
+        <div className="mt-2 text-xs text-muted-foreground">Managed by Prism</div>
       </div>
     </div>
   );
@@ -91,13 +87,11 @@ export function Sidebar() {
 
   return (
     <>
-      {/* Desktop */}
       <aside className="sticky top-0 hidden h-screen w-64 shrink-0 border-r bg-sidebar md:block">
         <NavContent />
       </aside>
 
-      {/* Mobile top bar + drawer */}
-      <div className="sticky top-0 z-30 flex w-full items-center gap-2 border-b bg-sidebar px-3 py-2 md:hidden">
+      <div className="sticky top-0 z-30 flex w-full shrink-0 items-center gap-2 border-b bg-sidebar px-4 py-2 md:hidden">
         <Sheet open={open} onOpenChange={setOpen}>
           <SheetTrigger asChild>
             <Button variant="ghost" size="icon" aria-label="Open menu">
@@ -113,7 +107,7 @@ export function Sidebar() {
           <div className="flex size-7 items-center justify-center rounded-md bg-primary text-primary-foreground text-sm font-semibold">
             L
           </div>
-          <span className="text-sm font-semibold">Listwin Portfolio</span>
+          <span className="text-sm font-semibold">Listwin</span>
         </div>
       </div>
     </>

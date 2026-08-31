@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Listwin Portfolio — Executive Dashboard",
   description:
-    "Analytics, search, and lead performance across Don Listwin's web properties, managed by Prism.",
+    "Executive snapshot of Don Listwin's five web projects — how each is doing from reviewed GA, Search, and Cove inquiry data.",
 };
 
 export default function RootLayout({
@@ -33,9 +33,9 @@ export default function RootLayout({
     >
       <body className="flex min-h-full flex-col antialiased">
         <TooltipProvider delayDuration={200}>
-          <div className="flex min-h-screen w-full">
+          <div className="flex min-h-screen w-full flex-col md:flex-row">
             <Sidebar />
-            <main className="flex-1 min-w-0 bg-muted/30">{children}</main>
+            <main className="min-w-0 flex-1 bg-background">{children}</main>
           </div>
           <Toaster />
         </TooltipProvider>
