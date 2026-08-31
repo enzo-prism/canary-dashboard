@@ -1,20 +1,27 @@
-import type { SiteId } from "@/lib/sites";
-import { formatNumber } from "@/lib/format";
-import type { SiteSnapshot, TrendPoint } from "./types";
+import { SITES, type SiteId } from "@/lib/sites";
+import type {
+  DataHealthRow,
+  PortfolioSiteSummary,
+  SiteSnapshot,
+  TrendPoint,
+} from "./types";
 import { RANGE_END, countsSeries, rangeStart } from "./series";
 
 /*
  * -------------------------------------------------------------------------
- *  MANUAL SNAPSHOT DATA
+ *  DASHBOARD SNAPSHOT DATA
  *
  *  This is the single source of truth for every number shown in the
  *  dashboard. Analytics and Search Console data below was exported with
  *  gogcli from GA4 and Google Search Console for 2026-04-28 through
  *  2026-05-25, compared with 2026-03-31 through 2026-04-27.
  *
- *  Canary Cove lead data remains a hand-curated Formspree export. To refresh
- *  the dashboard: rerun the gogcli reports, update the site blocks below,
- *  bump UPDATED_AT, and redeploy.
+ *  Canary Cove lead data remains a hand-curated Formspree export (summary
+ *  only on this board; the live roster is canarycove-dash). Main House has
+ *  no reviewed snapshot — its block is an honest empty placeholder.
+ *
+ *  To refresh the dashboard: rerun the gogcli reports, update the site
+ *  blocks below, bump UPDATED_AT, and redeploy. Do not invent live numbers.
  * -------------------------------------------------------------------------
  */
 
@@ -35,14 +42,19 @@ function searchPoints(rows: SearchTuple[]): TrendPoint[] {
 }
 
 // -- Canary Cove: hospitality, collects Formspree leads --
-// Source: Canary Cove - GA4 property properties/529589780, GSC sc-domain:canarycove.com. Exported with gogcli 2026-05-27T03:13:09.000Z.
+// Reviewed GA4 export: properties/529589780 (Canary Projects), GSC sc-domain:canarycove.com.
+// Also labeled, not merged: 311646376 (Canary Cove Main Site). Hostname: canarycove.com.
+// Exported with gogcli 2026-05-27T03:13:09.000Z. Do not steal these numbers for Main House.
 const canaryCove: SiteSnapshot = {
   siteId: "canary-cove",
+  review: "reviewed",
+  note: "Reviewed export from GA4 529589780 (Canary Projects). 311646376 (Canary Cove Main Site) is labeled separately and not merged. Hostname: canarycove.com.",
   periodLabel: PERIOD_LABEL,
   comparisonLabel: COMPARISON_LABEL,
   rangeStart: START,
   rangeEnd: RANGE_END,
   updatedAt: UPDATED_AT,
+  leadsUpdatedAt: "2026-06-19T00:00:00.000Z",
   analytics: {
     kpis: [
           {
@@ -708,9 +720,12 @@ const canaryCove: SiteSnapshot = {
 };
 
 // -- Belize Kids Foundation: nonprofit, donations and program storytelling --
-// Source: Belize Kids Foundation - GA4 property properties/489942783, GSC sc-domain:belizekids.org. Exported with gogcli 2026-05-27T03:13:09.000Z.
+// Reviewed GA4 export: properties/489942783 (Canary Projects), GSC sc-domain:belizekids.org.
+// Also labeled, not merged: 311657885. Exported with gogcli 2026-05-27T03:13:09.000Z.
 const belizeKids: SiteSnapshot = {
   siteId: "belize-kids",
+  review: "reviewed",
+  note: "Reviewed export from GA4 489942783 (Canary Projects). 311657885 is labeled separately and not merged into one total.",
   periodLabel: PERIOD_LABEL,
   comparisonLabel: COMPARISON_LABEL,
   rangeStart: START,
@@ -1235,9 +1250,12 @@ const belizeKids: SiteSnapshot = {
 };
 
 // -- Listwin Ventures: venture practice and Don Listwin profile traffic --
-// Source: Listwin Ventures - GA4 property properties/514358412, GSC sc-domain:listwinventures.com. Exported with gogcli 2026-05-27T03:13:09.000Z.
+// Reviewed GA4 export: properties/514358412, GSC sc-domain:listwinventures.com.
+// Exported with gogcli 2026-05-27T03:13:09.000Z.
 const listwinVentures: SiteSnapshot = {
   siteId: "listwin-ventures",
+  review: "reviewed",
+  note: "Reviewed export from GA4 514358412.",
   periodLabel: PERIOD_LABEL,
   comparisonLabel: COMPARISON_LABEL,
   rangeStart: START,
@@ -1762,9 +1780,12 @@ const listwinVentures: SiteSnapshot = {
 };
 
 // -- Canary Foundation: early cancer detection research nonprofit --
-// Source: Canary Foundation - GA4 property properties/311697082, GSC sc-domain:canaryfoundation.org. Exported with gogcli 2026-05-27T03:13:09.000Z.
+// Reviewed GA4 export: properties/311697082, GSC sc-domain:canaryfoundation.org.
+// Exported with gogcli 2026-05-27T03:13:09.000Z.
 const canaryFoundation: SiteSnapshot = {
   siteId: "canary-foundation",
+  review: "reviewed",
+  note: "Reviewed export from GA4 311697082.",
   periodLabel: PERIOD_LABEL,
   comparisonLabel: COMPARISON_LABEL,
   rangeStart: START,
@@ -2298,9 +2319,48 @@ const canaryFoundation: SiteSnapshot = {
   },
 };
 
+// -- Main House: Canary Cove microsite. No reviewed GA4 / GSC snapshot yet. --
+// Not in the Prism GA4 map as its own property. Do not reuse Canary Cove numbers.
+const mainHouse: SiteSnapshot = {
+  siteId: "main-house",
+  review: "empty",
+  note: "No reviewed snapshot yet. GA4 property unknown — not in the Prism map as its own property. Zeros are placeholders, not traffic.",
+  periodLabel: "No reviewed snapshot yet",
+  comparisonLabel: "—",
+  rangeStart: START,
+  rangeEnd: RANGE_END,
+  analytics: {
+    kpis: [
+      { label: "Active users", value: "0", caption: "No reviewed snapshot yet" },
+      { label: "Sessions", value: "0", caption: "No reviewed snapshot yet" },
+      { label: "New users", value: "0", caption: "No reviewed snapshot yet" },
+      { label: "Engagement rate", value: "0%", caption: "No reviewed snapshot yet" },
+      { label: "Avg. engagement", value: "0s", caption: "No reviewed snapshot yet" },
+      { label: "Page views", value: "0", caption: "No reviewed snapshot yet" },
+    ],
+    trafficTrend: [],
+    channels: [],
+    devices: [],
+    topPages: [],
+    topCountries: [],
+  },
+  search: {
+    kpis: [
+      { label: "Clicks", value: "0", caption: "No reviewed snapshot yet" },
+      { label: "Impressions", value: "0", caption: "No reviewed snapshot yet" },
+      { label: "Average CTR", value: "0%", caption: "No reviewed snapshot yet" },
+      { label: "Average position", value: "—", caption: "No reviewed snapshot yet" },
+    ],
+    trend: [],
+    topQueries: [],
+    topPages: [],
+  },
+};
+
 const SNAPSHOTS: Record<SiteId, SiteSnapshot> = {
   "canary-cove": canaryCove,
   "belize-kids": belizeKids,
+  "main-house": mainHouse,
   "listwin-ventures": listwinVentures,
   "canary-foundation": canaryFoundation,
 };
@@ -2309,19 +2369,56 @@ export function getSnapshot(siteId: SiteId): SiteSnapshot {
   return SNAPSHOTS[siteId];
 }
 
-/** Portfolio roll-up used on the landing overview. */
-export function getPortfolioSummary() {
-  return (Object.keys(SNAPSHOTS) as SiteId[]).map((id) => {
-    const snap = SNAPSHOTS[id];
-    const users = snap.analytics.kpis.find((k) => k.label === "Active users");
-    const clicks = snap.search.kpis.find((k) => k.label === "Clicks");
+function kpiValue(snap: SiteSnapshot, group: "analytics" | "search", label: string) {
+  return snap[group].kpis.find((k) => k.label === label);
+}
+
+/** Portfolio roll-up used on the landing overview. Walks the site registry order. */
+export function getPortfolioSummary(): PortfolioSiteSummary[] {
+  return SITES.map((site) => {
+    const snap = SNAPSHOTS[site.id];
+    const empty = snap.review === "empty";
+    const users = kpiValue(snap, "analytics", "Active users");
+    const sessions = kpiValue(snap, "analytics", "Sessions");
+    const clicks = kpiValue(snap, "search", "Clicks");
+    const inquiries = snap.leads?.kpis.find((k) => k.label === "Total inquiries");
+    const unique = snap.leads?.kpis.find((k) => k.label === "Unique leads");
+    const booking = snap.leads?.kpis.find((k) => k.label === "Booking parties");
+
     return {
-      siteId: id,
-      users: users?.value ?? "-",
-      usersDelta: users?.deltaPct ?? 0,
-      clicks: clicks?.value ?? "-",
-      clicksDelta: clicks?.deltaPct ?? 0,
-      leads: snap.leads ? formatNumber(Number(snap.leads.kpis[0].value.replace(/,/g, ""))) : null,
+      siteId: site.id,
+      review: snap.review,
+      note: snap.note,
+      updatedAt: snap.updatedAt,
+      leadsUpdatedAt: snap.leadsUpdatedAt,
+      periodLabel: snap.periodLabel,
+      users: empty ? null : (users?.value ?? null),
+      usersDelta: empty ? undefined : users?.deltaPct,
+      sessions: empty ? null : (sessions?.value ?? null),
+      sessionsDelta: empty ? undefined : sessions?.deltaPct,
+      clicks: empty ? null : (clicks?.value ?? null),
+      clicksDelta: empty ? undefined : clicks?.deltaPct,
+      leads:
+        snap.leads && inquiries
+          ? {
+              volume: inquiries.value,
+              unique: unique?.value,
+              booking: booking?.value,
+            }
+          : null,
+    };
+  });
+}
+
+export function getDataHealth(): DataHealthRow[] {
+  return SITES.map((site) => {
+    const snap = SNAPSHOTS[site.id];
+    return {
+      siteId: site.id,
+      review: snap.review,
+      updatedAt: snap.updatedAt,
+      leadsUpdatedAt: snap.leadsUpdatedAt,
+      note: snap.note,
     };
   });
 }

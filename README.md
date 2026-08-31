@@ -1,25 +1,31 @@
 # Listwin Portfolio — Executive Dashboard
 
-A private executive dashboard for **Don Listwin**, summarizing the performance of
-the four web properties Prism manages for him:
+A private executive dashboard for **Don Listwin**. The first screen is the
+board: all five projects, a snapshot of how each is doing, and the key numbers
+from the last reviewed export.
 
-| Site | Domain | Type | Leads |
+| Site | Domain | Type | Notes |
 | --- | --- | --- | --- |
-| Canary Cove | `canarycove.com` | Hospitality | ✅ Formspree |
-| Belize Kids Foundation | `belizekids.org` | Nonprofit | — |
-| Listwin Ventures | `listwinventures.com` (`lvventures.com`) | Ventures | — |
-| Canary Foundation | `canaryfoundation.org` | Nonprofit | — |
+| Canary Cove | `canarycove.com` | Hospitality | Formspree inquiry **summary** only. Full roster: [canarycove-dash](https://canarycove-dash.vercel.app) |
+| Belize Kids Foundation | `belizekids.org` | Nonprofit | Two GA4 properties, labeled separately |
+| Main House | `mainhouse.canarycove.com` | Hospitality | Repo `enzo-prism/main-house-CC`. No reviewed snapshot yet |
+| Listwin Ventures | `listwinventures.com` (`lvventures.com`) | Ventures | |
+| Canary Foundation | `canaryfoundation.org` | Nonprofit | Repo `enzo-prism/canary-foundation` |
 
-Each site has its own tab in the left sidebar. Inside a site you get:
+`canarycove-dash` stays the Cove **booking leads** board. This repo does not
+duplicate that guest roster.
+
+Each project has its own route. Inside a site you get:
 
 - **Analytics** — Google Analytics 4: users, sessions, engagement, a daily
   traffic trend, channels, devices, top pages, and top countries.
-- **Search Console** — Google Search Console: clicks, impressions, CTR, average
-  position, a daily clicks/impressions trend, top queries, and top pages.
-- **Leads** — _Canary Cove only_: Formspree inquiry volume, conversion, response
-  time, a daily lead trend, and a recent-inquiry table.
+- **Search Console** — clicks, impressions, CTR, average position, a daily
+  trend, top queries, and top pages.
+- **Leads** — _Canary Cove only_: inquiry volume, unique leads, booking
+  parties, and a link out to the live inquiry board. Other projects stay empty.
 
-The landing page (`/`) is a portfolio roll-up with one card per site.
+The landing page (`/`) is the executive roll-up plus a data-health strip
+(which snapshots exist, which are empty, labeled GA4 property IDs).
 
 ## Stack
 
@@ -28,23 +34,33 @@ The landing page (`/`) is a portfolio roll-up with one card per site.
 - **Recharts** for the trend charts.
 - **lucide-react** icons.
 
-Matches the house stack used by `lead-dashboard`.
+Visual feel follows the RDA Executive Dashboard contract (calm, private,
+operational; Geist; 8/16/24/40/64 spacing; two surface levels) without copying
+dental pages or RDA logo-blue.
 
-## Data model — manual snapshots
+## Data model — curated snapshots
 
-This dashboard does **not** call the Google or Formspree APIs at runtime. All
-numbers are curated **snapshots** that the Prism team refreshes from each
-property's GA4 / Search Console reports with `gogcli` (and Formspree for Canary
-Cove). This is the same operating model as the Prism `lead-dashboard`.
+This dashboard does **not** call the Google, Formspree, or ads APIs at runtime.
+All numbers are curated **snapshots**. Do not invent live traffic, named guests,
+or donors.
 
-Everything the UI renders comes from one place:
-
-- **`src/lib/sites.ts`** — the site registry (names, domains, accent colors,
-  which sites collect leads, sidebar order).
+- **`src/lib/sites.ts`** — the site registry (names, domains, categories, GA4
+  property labels, which sites collect leads, sidebar order).
 - **`src/data/snapshots.ts`** — the curated GA / GSC / leads data per site.
   **This is the file you edit to update the dashboard.**
-- **`src/data/types.ts`** — the snapshot shape (KPIs, trends, tables, leads).
+- **`src/data/types.ts`** — the snapshot shape (KPIs, trends, tables, leads,
+  review status).
 - **`src/data/series.ts`** — date helpers plus the real lead-count series helper.
+
+Known GA4 property IDs (labels / data-health only):
+
+| Site | Properties |
+| --- | --- |
+| Canary Cove | `311646376` (Canary Cove Main Site) · `529589780` (Canary Projects, snapshot source). Hostname: `canarycove.com`. Not merged. |
+| Belize Kids | `311657885` · `489942783` (Canary Projects, snapshot source). Not merged. |
+| Listwin Ventures | `514358412` |
+| Canary Foundation | `311697082` |
+| Main House | Unknown. Empty placeholder until a reviewed snapshot exists. |
 
 ### To update a site's numbers
 
@@ -54,14 +70,6 @@ Everything the UI renders comes from one place:
    splits, top pages, queries, and search pages.
 4. Bump `UPDATED_AT`.
 5. Redeploy.
-
-### Wiring live APIs later
-
-The page components treat **`getSnapshot(siteId)`** in `src/data/snapshots.ts` as
-the only data boundary. To go live, make it `async` and fetch from the GA4 Data
-API + Search Console API + Formspree, returning the same `SiteSnapshot` shape —
-no UI changes required. (`ExternalConnection`-style credentials would live in env
-vars / a service-account JSON, as in `lead-dashboard`.)
 
 ## Develop
 
@@ -90,14 +98,14 @@ pnpm lint
 src/
   app/
     layout.tsx            # sidebar + main shell
-    page.tsx              # portfolio overview (landing)
+    page.tsx              # executive roll-up (landing)
     [site]/page.tsx       # per-site dashboard (Analytics / Search / Leads tabs)
   components/
     dashboard/            # sidebar, page header, KPI cards, charts, tables, panels
     ui/                   # ShadCN primitives
   data/
     snapshots.ts          # ← curated per-site data (edit here)
-    series.ts             # seeded daily-trend generator
+    series.ts             # date helpers + lead-count series
     types.ts              # snapshot types
   lib/
     sites.ts              # site registry
