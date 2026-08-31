@@ -33,9 +33,9 @@ export default function RootLayout({
     >
       <body className="flex min-h-full flex-col antialiased">
         <TooltipProvider delayDuration={200}>
-          <div className="flex min-h-screen w-full">
+          <div className="flex min-h-screen w-full flex-col md:flex-row">
             <Sidebar />
-            <main className="flex-1 min-w-0 bg-background">{children}</main>
+            <main className="min-w-0 flex-1 bg-background">{children}</main>
           </div>
           <Toaster />
         </TooltipProvider>
