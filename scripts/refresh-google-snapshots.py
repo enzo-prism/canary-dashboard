@@ -9,7 +9,7 @@ SITES={
  'canary-cove':('529589780','canarycove.com','www.canarycove.com'),
  'belize-kids':('489942783','belizekids.org','www.belizekids.org'),
  'listwin-ventures':('514358412','listwinventures.com','www.listwinventures.com'),
- 'canary-foundation':('311697082','canaryfoundation.org','canaryfoundation.org'),
+ 'canary-foundation':('311697082','canaryfoundation.org','www.canaryfoundation.org'),
 }
 _ACCESS_TOKEN=None
 REFRESH=False
@@ -80,7 +80,11 @@ def kpi(label,v,p=None,formatted=None,**extra):
  return o
 def days(start=START):return [(dt.date.fromisoformat(start)+dt.timedelta(days=i)).isoformat() for i in range(28)]
 def build():
- stamp=dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds').replace('+00:00','Z');snapshots={}
+ # An offline rebuild does not reread Google and must not advance freshness.
+ receipt_path=OUT/'receipt.json'
+ previous_receipt=json.loads(receipt_path.read_text()) if receipt_path.exists() else {}
+ stamp=previous_receipt.get('exportedAt') if not REFRESH else None
+ stamp=stamp or dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds').replace('+00:00','Z');snapshots={}
  for s,(prop,domain,host) in SITES.items():
   cur=ga(s,'hostName',METRICS);prev=ga(s,'hostName',METRICS,True)
   if len(cur)!=1:raise RuntimeError('Missing canonical host totals: '+s)
