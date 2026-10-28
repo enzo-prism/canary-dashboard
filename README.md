@@ -8,7 +8,7 @@ from the last reviewed export.
 | --- | --- | --- | --- |
 | Canary Cove | `canarycove.com` | Hospitality | Formspree inquiry **summary** only. Full roster: [canarycove-dash](https://canarycove-dash.vercel.app) |
 | Belize Kids Foundation | `belizekids.org` | Nonprofit | Two GA4 properties, labeled separately |
-| Main House | `mainhouse.canarycove.com` | Hospitality | Repo `enzo-prism/main-house-CC`. No reviewed snapshot yet |
+| Main House | `mainhouse.canarycove.com` | Hospitality | Repo `enzo-prism/main-house-CC`. Host-filtered Search Console; GA4 unavailable |
 | Listwin Ventures | `listwinventures.com` (`lvventures.com`) | Ventures | |
 | Canary Foundation | `canaryfoundation.org` | Nonprofit | Repo `enzo-prism/canary-foundation` |
 
@@ -21,11 +21,11 @@ Each project has its own route. Inside a site you get:
   traffic trend, channels, devices, top pages, and top countries.
 - **Search Console** — clicks, impressions, CTR, average position, a daily
   trend, top queries, and top pages.
-- **Leads** — _Canary Cove only_: inquiry volume, unique leads, booking
-  parties, and a link out to the live inquiry board. Other projects stay empty.
+- **Leads** — _Canary Cove only_: inquiry volume, unique senders, booking-request
+  submissions, and a link out to the live inquiry board. No private inquiry roster is embedded.
 
 The landing page (`/`) is the executive roll-up plus a data-health strip
-(which snapshots exist, which are empty, labeled GA4 property IDs).
+(complete or partial source coverage and labeled GA4 property IDs).
 
 ## Stack
 
@@ -46,8 +46,9 @@ or donors.
 
 - **`src/lib/sites.ts`** — the site registry (names, domains, categories, GA4
   property labels, which sites collect leads, sidebar order).
-- **`src/data/snapshots.ts`** — the curated GA / GSC / leads data per site.
-  **This is the file you edit to update the dashboard.**
+- **`src/data/reviewed-google-snapshots.json`** — the reviewed Google metrics.
+- **`src/data/reviewed-leads-summary.json`** — the reviewed aggregate Cove intake summary.
+- **`src/data/snapshots.ts`** — typed read access and portfolio/lead roll-ups.
 - **`src/data/types.ts`** — the snapshot shape (KPIs, trends, tables, leads,
   review status).
 - **`src/data/series.ts`** — date helpers plus the real lead-count series helper.
@@ -60,16 +61,15 @@ Known GA4 property IDs (labels / data-health only):
 | Belize Kids | `311657885` · `489942783` (Canary Projects, snapshot source). Not merged. |
 | Listwin Ventures | `514358412` |
 | Canary Foundation | `311697082` |
-| Main House | Unknown. Empty placeholder until a reviewed snapshot exists. |
+| Main House | No verified GA4 measurement. Search uses `sc-domain:canarycove.com` with exact Main House page-prefix filtering. |
 
 ### To update a site's numbers
 
-1. Open `src/data/snapshots.ts`.
-2. Refresh GA4 and Search Console with `gogcli`.
-3. Replace that site's headline KPIs, daily trend rows, channel/device/country
-   splits, top pages, queries, and search pages.
-4. Bump `UPDATED_AT`.
-5. Redeploy.
+1. Review `docs/data-refresh-2026-10-28.md` for exact reporting scopes and current windows.
+2. Run `python3 scripts/refresh-google-snapshots.py --refresh` to read the fixed reviewed periods from Google through authenticated, read-only Google requests.
+3. Run `python3 scripts/validate-snapshots.py` to compare delivered totals and trends with the preserved source responses.
+4. Refresh the separate aggregate Cove lead summary from the reviewed operational board. No private roster belongs in this dashboard.
+5. Run typecheck, lint and build before release; verify the deployed values afterward.
 
 ## Develop
 
@@ -104,7 +104,7 @@ src/
     dashboard/            # sidebar, page header, KPI cards, charts, tables, panels
     ui/                   # ShadCN primitives
   data/
-    snapshots.ts          # ← curated per-site data (edit here)
+    snapshots.ts          # typed snapshots and roll-ups
     series.ts             # date helpers + lead-count series
     types.ts              # snapshot types
   lib/

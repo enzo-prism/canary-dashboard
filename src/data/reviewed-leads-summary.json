@@ -1,0 +1,141 @@
+{
+  "exportedAt": "2026-10-28T17:00:34.526Z",
+  "rawRows": 77,
+  "visibleRows": 36,
+  "filteredRows": 42,
+  "contactRows": 43,
+  "bookingRows": 34,
+  "excludedEmailCaptureRows": 5,
+  "reviewRows": 0,
+  "sourceFiles": [
+    "Formspree dashboard JSON export xvzarybk contact complete export",
+    "Formspree dashboard JSON export xqeqllek booking complete export",
+    "Preserved typeform inquiries (outside Formspree reconciliation)"
+  ],
+  "formspreeVisibleRows": 35,
+  "heldRows": 1,
+  "sourceStart": "2026-04-20T21:15:35.493Z",
+  "sourceEnd": "2026-10-27T04:47:44.331Z",
+  "totalInquiries": 36,
+  "uniqueSenders": 28,
+  "bookingRequests": 24,
+  "contactRequests": 12,
+  "periodStart": "2026-09-30",
+  "periodEnd": "2026-10-27",
+  "periodInquiries": 8,
+  "dailyTrend": [
+    {
+      "date": "2026-09-30",
+      "inquiries": 0
+    },
+    {
+      "date": "2026-10-01",
+      "inquiries": 0
+    },
+    {
+      "date": "2026-10-02",
+      "inquiries": 1
+    },
+    {
+      "date": "2026-10-03",
+      "inquiries": 0
+    },
+    {
+      "date": "2026-10-04",
+      "inquiries": 0
+    },
+    {
+      "date": "2026-10-05",
+      "inquiries": 0
+    },
+    {
+      "date": "2026-10-06",
+      "inquiries": 0
+    },
+    {
+      "date": "2026-10-07",
+      "inquiries": 0
+    },
+    {
+      "date": "2026-10-08",
+      "inquiries": 0
+    },
+    {
+      "date": "2026-10-09",
+      "inquiries": 0
+    },
+    {
+      "date": "2026-10-10",
+      "inquiries": 0
+    },
+    {
+      "date": "2026-10-11",
+      "inquiries": 0
+    },
+    {
+      "date": "2026-10-12",
+      "inquiries": 1
+    },
+    {
+      "date": "2026-10-13",
+      "inquiries": 1
+    },
+    {
+      "date": "2026-10-14",
+      "inquiries": 0
+    },
+    {
+      "date": "2026-10-15",
+      "inquiries": 0
+    },
+    {
+      "date": "2026-10-16",
+      "inquiries": 0
+    },
+    {
+      "date": "2026-10-17",
+      "inquiries": 0
+    },
+    {
+      "date": "2026-10-18",
+      "inquiries": 0
+    },
+    {
+      "date": "2026-10-19",
+      "inquiries": 1
+    },
+    {
+      "date": "2026-10-20",
+      "inquiries": 0
+    },
+    {
+      "date": "2026-10-21",
+      "inquiries": 1
+    },
+    {
+      "date": "2026-10-22",
+      "inquiries": 0
+    },
+    {
+      "date": "2026-10-23",
+      "inquiries": 0
+    },
+    {
+      "date": "2026-10-24",
+      "inquiries": 0
+    },
+    {
+      "date": "2026-10-25",
+      "inquiries": 1
+    },
+    {
+      "date": "2026-10-26",
+      "inquiries": 2
+    },
+    {
+      "date": "2026-10-27",
+      "inquiries": 0
+    }
+  ],
+  "reportingTimeZone": "America/Los_Angeles"
+}

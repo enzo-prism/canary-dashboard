@@ -34,15 +34,21 @@ export function PageHeader({ site, snapshot }: { site: Site; snapshot: SiteSnaps
         <div className="font-medium text-foreground">
           {empty ? "No reviewed snapshot yet" : "Dashboard snapshot"}
         </div>
-        {!empty && snapshot.rangeStart && snapshot.rangeEnd && (
+        {!empty && snapshot.analytics.kpis.length > 0 && snapshot.rangeStart && snapshot.rangeEnd && (
           <div className="mt-2">
-            {formatDateLong(snapshot.rangeStart)} – {formatDateLong(snapshot.rangeEnd)}
+            GA4: {formatDateLong(snapshot.rangeStart)} – {formatDateLong(snapshot.rangeEnd)}
           </div>
+        )}
+        {!empty && snapshot.searchRangeStart && snapshot.searchRangeEnd && (
+          <div className="mt-2">Search: {formatDateLong(snapshot.searchRangeStart)} – {formatDateLong(snapshot.searchRangeEnd)}</div>
         )}
         {!empty && snapshot.updatedAt && (
           <div className="mt-2">Refreshed {formatDateLong(snapshot.updatedAt)}</div>
         )}
       </div>
+      {snapshot.note && !empty && (
+        <p className="text-sm text-muted-foreground lg:max-w-sm">{snapshot.note}</p>
+      )}
     </div>
   );
 }

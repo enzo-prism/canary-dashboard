@@ -67,30 +67,31 @@ function ProjectCard({ row }: { row: PortfolioSiteSummary }) {
 
         <p className="text-sm text-muted-foreground">{site.blurb}</p>
 
+        {row.review === "partial" && <p className="text-sm text-muted-foreground">Search data available; GA4 unavailable.</p>}
         {empty ? (
           <div className="border-t border-border pt-6">
             <p className="text-sm font-medium">No reviewed snapshot yet</p>
             <p className="mt-2 text-sm text-muted-foreground">
-              GA4 property unknown. Zeros are placeholders, not traffic.
+              Independent measurement unavailable.
             </p>
           </div>
         ) : (
           <div className="grid grid-cols-2 gap-6 border-t border-border pt-6 sm:grid-cols-3">
             <Metric label="Users" value={row.users} delta={row.usersDelta} />
             <Metric label="Sessions" value={row.sessions} delta={row.sessionsDelta} />
-            <Metric label="Search clicks" value={row.clicks} delta={row.clicksDelta} />
+            <Metric label="Search clicks · Sep 29–Oct 26" value={row.clicks} delta={row.clicksDelta} />
             {row.leads && (
               <>
-                <Metric label="Inquiries" value={row.leads.volume} />
+                <Metric label="Inquiries · all time" value={row.leads.volume} />
                 <div>
                   <div className="text-xs font-medium uppercase tracking-[0.06em] text-muted-foreground">
-                    Conversion
+                    Booking requests · all time
                   </div>
                   <div className="mt-2 text-[32px] font-semibold leading-none tracking-[-0.011em] tabular-nums">
                     {row.leads.booking ?? "—"}
                   </div>
                   <p className="mt-2 text-sm text-muted-foreground">
-                    {row.leads.booking} of {row.leads.unique} unique leads requested dates
+                    {row.leads.unique} unique senders across all inquiries
                   </p>
                 </div>
                 {row.leadsUpdatedAt && (
@@ -138,6 +139,7 @@ export default function OverviewPage() {
   const summary = getPortfolioSummary();
   const health = getDataHealth();
   const reviewed = health.filter((row) => row.review === "reviewed").length;
+  const partial = health.filter((row) => row.review === "partial").length;
   const empty = health.filter((row) => row.review === "empty").length;
 
   return (
@@ -159,7 +161,8 @@ export default function OverviewPage() {
         <div className="text-sm text-muted-foreground lg:text-right">
           <div className="font-medium text-foreground">Last 28 days</div>
           <div className="mt-2">
-            {formatDateLong(rangeStart())} – {formatDateLong(RANGE_END)}
+            GA4: {formatDateLong(rangeStart())} – {formatDateLong(RANGE_END)}
+            <br />Search: Sep 29 – Oct 26, 2026
           </div>
         </div>
       </div>
@@ -175,8 +178,7 @@ export default function OverviewPage() {
           <div>
             <h2 className="text-lg font-semibold">Data health</h2>
             <p className="mt-2 text-sm text-muted-foreground">
-              {reviewed} reviewed snapshots, {empty} empty. Property IDs are
-              labels only — this board does not call Google or Formspree.
+              {reviewed} reviewed snapshots, {partial} partial, {empty} empty. GA4 scopes exclude development and preview hosts. Latest Google reporting days can revise.
             </p>
           </div>
           <ul className="divide-y divide-border">
@@ -187,7 +189,7 @@ export default function OverviewPage() {
                   <div className="flex flex-wrap items-baseline justify-between gap-4">
                     <span className="font-medium">{site.name}</span>
                     <span className="text-sm text-muted-foreground">
-                      {row.review === "reviewed"
+                      {row.review !== "empty"
                         ? row.updatedAt
                           ? `Refreshed ${formatDateLong(row.updatedAt)}`
                           : "Reviewed"
@@ -209,6 +211,7 @@ export default function OverviewPage() {
                       GA4 property unknown. Not in the Prism map as its own property.
                     </p>
                   )}
+                  {row.note && <p className="text-sm text-muted-foreground">{row.note}</p>}
                   {row.leadsUpdatedAt && (
                     <p className="text-sm text-muted-foreground">
                       Leads export {formatDateLong(row.leadsUpdatedAt)}. Full roster:{" "}

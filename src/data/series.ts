@@ -2,7 +2,7 @@ import type { TrendPoint } from "./types";
 
 export const PERIOD_DAYS = 28;
 /** Fixed snapshot end date so the dashboard is deterministic, not "today"-dependent. */
-export const RANGE_END = "2026-05-25";
+export const RANGE_END = "2026-10-27";
 
 function isoDaysAgo(end: string, daysBack: number): string {
   const d = new Date(`${end}T00:00:00Z`);

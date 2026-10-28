@@ -1,0 +1,22 @@
+# Reviewed snapshot refresh — October 28, 2026
+
+This refresh replaces April–May traffic/search data with September 30–October 27, 2026, compared with September 2–29. These are complete calendar dates, not a claim that Google's newest reporting data is final. Search uses the newest complete 28-day window, September 29–October 26, compared with September 1–28, using `dataState=FINAL`. An explicit probe showed October 26 as the latest final day for all four domain properties. The GA4 API metadata confirms America/Los_Angeles for all four properties; Search Console also uses Pacific dates.
+
+| Project | GA4 property | Included GA4 hostnames | Active users | Sessions | Search clicks | Search impressions |
+| --- | --- | --- | ---: | ---: | ---: | ---: |
+| Canary Cove | 529589780 | canarycove.com + www | 597 | 615 | 24 | 703 |
+| Belize Kids | 489942783 | belizekids.org + www | 43 | 44 | 21 | 601 |
+| Listwin Ventures | 514358412 | listwinventures.com + www | 24 | 32 | 40 | 1,366 |
+| Canary Foundation | 311697082 | canaryfoundation.org + www | 698 | 765 | 95 | 3,150 |
+| Main House | Unverified | Unavailable | — | — | 0 | 7 |
+
+GA4 reporting uses an exact production apex+www hostname union inside the Analytics Data API. This excludes localhost and preview-host traffic that materially inflated the property-wide Cove and Belize Kids totals. The API computes distinct users for the filtered union; distinct users are never added across dates or hosts to create a period KPI. The same filter applies to comparisons and every breakdown. Search uses the existing `sc-domain:` property for each domain and covers all its hosts. Main House Search Console uses the shared `sc-domain:canarycove.com` property with exact `^https://mainhouse[.]canarycove[.]com/` page-prefix filtering. It reports zero clicks and seven impressions, versus zero clicks and 17 impressions previously. GA4 host reports across the accessible Cove properties `529589780`, `311646376`, and `360518211` returned no Main House hostname events for September 2–October 27. Its GA4 metrics remain unavailable; Cove aggregate numbers are not reused.
+
+KPI totals come from dimensionless, production-host-filtered GA4 reports and dimensionless Search Console reports. Daily data is sorted and zero-filled across the selected dates. Top GA4 page rows retain source page/title identities. Average engagement is reported engagement duration divided by active users, including on page rows. Channel, device and country percentages use their respective full breakdown-row totals; dimensional counts can overlap and need not sum to the period distinct total. Top search queries/pages are the API-returned top rows, with privacy and API limits; these are not used to calculate overall search KPIs.
+
+Source exports and request receipt are cached under ignored `work/source-20261028/`. Search reports use authenticated, read-only `gog` requests. GA4 uses the official read-only Analytics Data `runReport` endpoint with the existing account token, because `gog` lacks dimension-filter support. A supported `gog auth tokens export` writes into a 0700 temporary directory/0600 file; the file is removed before API reads and only the access token is held in process memory. Tokens are never logged, committed or written to source exports. Run `python3 scripts/refresh-google-snapshots.py --refresh` to reread these fixed periods, or omit `--refresh` to rebuild from the preserved exports. The script writes `src/data/reviewed-google-snapshots.json`; runtime pages make no Google API calls.
+
+The layout starts from the existing five-project executive dashboard PR #1 head `32716d9`, preserving its desktop/mobile UI. No publication, merge or deployment was performed by this refresh.
+
+
+Cove lead summary was reconciled October 28: 77 operational Formspree rows = 35 genuine + 42 spam/test; five email captures are excluded. One preserved Typeform inquiry brings the dashboard to 36 genuine inquiries, 28 unique senders, 24 booking-request submissions and 12 contact-request submissions. Eight genuine inquiries fall in September 30–October 27. Inquiry dates are bucketed in America/Los_Angeles, matching Google reporting; original operational source timestamps remain UTC. Headlines are labeled all-time; the chart uses the 28-day period. No response, confirmed-booking, revenue or conversion outcome is inferred. Only aggregate data is included; the operational roster stays on its separate board.

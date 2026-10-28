@@ -61,7 +61,7 @@ export default async function SitePage({
         </Panel>
       )}
 
-      <Tabs defaultValue="analytics" className="gap-6">
+      <Tabs defaultValue={analytics.kpis.length ? "analytics" : "search"} className="gap-6">
         <TabsList>
           <TabsTrigger value="analytics">
             <BarChart3 className="size-4" />
@@ -80,7 +80,7 @@ export default async function SitePage({
         </TabsList>
 
         <TabsContent value="analytics" className="flex flex-col gap-10">
-          <KpiGrid kpis={analytics.kpis} />
+          {analytics.kpis.length > 0 ? <KpiGrid kpis={analytics.kpis} /> : <EmptySnapshotNote title="GA4 measurements unavailable" />}
 
           <Panel
             title="Traffic over time"
@@ -97,14 +97,14 @@ export default async function SitePage({
           </Panel>
 
           <div className="grid gap-6 lg:grid-cols-2">
-            <Panel title="Channels" description="Where sessions came from." icon={Globe}>
+            <Panel title="Channels" description="Sessions by channel. Shares use the breakdown total." icon={Globe}>
               {analytics.channels.length === 0 ? (
                 <EmptySnapshotNote>No channel split in this snapshot.</EmptySnapshotNote>
               ) : (
                 <BarList data={analytics.channels} valueLabel="sessions" />
               )}
             </Panel>
-            <Panel title="Devices" description="Sessions by device category." icon={MonitorSmartphone}>
+            <Panel title="Devices" description="Sessions by device. Shares use the breakdown total." icon={MonitorSmartphone}>
               {analytics.devices.length === 0 ? (
                 <EmptySnapshotNote>No device split in this snapshot.</EmptySnapshotNote>
               ) : (
@@ -121,7 +121,7 @@ export default async function SitePage({
                 <TopPagesTable pages={analytics.topPages} />
               )}
             </Panel>
-            <Panel title="Top countries" description="Users by country." icon={MapPin}>
+            <Panel title="Top countries" description="Users by country. Shares use the breakdown total." icon={MapPin}>
               {analytics.topCountries.length === 0 ? (
                 <EmptySnapshotNote>No country split in this snapshot.</EmptySnapshotNote>
               ) : (
@@ -136,7 +136,7 @@ export default async function SitePage({
 
           <Panel
             title="Clicks & impressions"
-            description="Daily Search performance. Impressions use the right axis."
+            description="Final Search data for Sep 29–Oct 26, compared with Sep 1–28. Impressions use the right axis."
             icon={Search}
           >
             {empty || search.trend.length === 0 ? (
@@ -151,7 +151,7 @@ export default async function SitePage({
           <div className="grid gap-6 lg:grid-cols-2">
             <Panel title="Top queries" description="Searches driving the most clicks.">
               {search.topQueries.length === 0 ? (
-                <EmptySnapshotNote>No query rows in this snapshot.</EmptySnapshotNote>
+                <EmptySnapshotNote title="No query rows reported">Search Console returned no query-level rows for this scope.</EmptySnapshotNote>
               ) : (
                 <QueriesTable queries={search.topQueries} />
               )}
@@ -172,7 +172,7 @@ export default async function SitePage({
 
             <Panel
               title="Inquiry volume"
-              description="Daily submissions across the Formspree Contact and Booking forms, Apr 20 – Jun 13, 2026 (spam excluded)."
+              description={leads.description}
               icon={MessageSquare}
             >
               <LeadsTrendChart data={leads.trend} />
@@ -180,18 +180,18 @@ export default async function SitePage({
 
             <Panel
               title="Live inquiry board"
-              description="The full guest roster lives on the Cove booking leads board. This page keeps volume and conversion only."
+              description={leads.sourceSummary}
             >
               <div className="flex flex-col gap-4">
                 <p className="text-sm text-muted-foreground">
-                  {leads.kpis[1]?.value ?? "—"} unique leads ·{" "}
-                  {leads.kpis[2]?.value ?? "—"} booking parties of those unique
-                  leads requested travel dates
+                  {leads.kpis[1]?.value ?? "—"} unique senders ·{" "}
+                  {leads.kpis[2]?.value ?? "—"} booking-request submissions across all inquiries
                   {snapshot.leadsUpdatedAt
                     ? ` · last refresh ${formatDateLong(snapshot.leadsUpdatedAt)}`
                     : ""}
                   .
                 </p>
+                <p className="text-sm text-muted-foreground">Inquiry submissions do not establish confirmed bookings, responses or revenue.</p>
                 {site.inquiryBoardUrl && (
                   <a
                     href={site.inquiryBoardUrl}

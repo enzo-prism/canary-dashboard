@@ -1,0 +1,2733 @@
+{
+  "canary-cove": {
+    "siteId": "canary-cove",
+    "review": "reviewed",
+    "note": "GA4 529589780: canarycove.com + www.canarycove.com; localhost, previews and other hosts excluded. Search Console: sc-domain:canarycove.com (all domain hosts). GA4 newest days can revise. Search final data: Sep 29\u2013Oct 26, compared with Sep 1\u201328. Comparisons use the same production-host filter.",
+    "periodLabel": "Last 28 complete calendar days",
+    "comparisonLabel": "vs. Sep 2\u201329, 2026",
+    "rangeStart": "2026-09-30",
+    "rangeEnd": "2026-10-27",
+    "searchRangeStart": "2026-09-29",
+    "searchRangeEnd": "2026-10-26",
+    "updatedAt": "2026-10-28T17:08:58Z",
+    "analytics": {
+      "kpis": [
+        {
+          "label": "Active users",
+          "value": "597",
+          "deltaPct": 67.2
+        },
+        {
+          "label": "Sessions",
+          "value": "615",
+          "deltaPct": 61.8
+        },
+        {
+          "label": "New users",
+          "value": "234",
+          "deltaPct": 29.3
+        },
+        {
+          "label": "Engagement rate",
+          "value": "48.8%",
+          "deltaPct": 0.2
+        },
+        {
+          "label": "Avg. engagement",
+          "value": "9s",
+          "caption": "Engagement time per active user",
+          "deltaPct": -53.7
+        },
+        {
+          "label": "Page views",
+          "value": "1,016",
+          "deltaPct": 22.1
+        }
+      ],
+      "trafficTrend": [
+        {
+          "date": "2026-09-30",
+          "users": 2,
+          "sessions": 3
+        },
+        {
+          "date": "2026-10-01",
+          "users": 7,
+          "sessions": 7
+        },
+        {
+          "date": "2026-10-02",
+          "users": 50,
+          "sessions": 50
+        },
+        {
+          "date": "2026-10-03",
+          "users": 3,
+          "sessions": 3
+        },
+        {
+          "date": "2026-10-04",
+          "users": 142,
+          "sessions": 146
+        },
+        {
+          "date": "2026-10-05",
+          "users": 19,
+          "sessions": 19
+        },
+        {
+          "date": "2026-10-06",
+          "users": 4,
+          "sessions": 4
+        },
+        {
+          "date": "2026-10-07",
+          "users": 94,
+          "sessions": 95
+        },
+        {
+          "date": "2026-10-08",
+          "users": 2,
+          "sessions": 2
+        },
+        {
+          "date": "2026-10-09",
+          "users": 2,
+          "sessions": 2
+        },
+        {
+          "date": "2026-10-10",
+          "users": 4,
+          "sessions": 4
+        },
+        {
+          "date": "2026-10-11",
+          "users": 5,
+          "sessions": 5
+        },
+        {
+          "date": "2026-10-12",
+          "users": 10,
+          "sessions": 10
+        },
+        {
+          "date": "2026-10-13",
+          "users": 189,
+          "sessions": 188
+        },
+        {
+          "date": "2026-10-14",
+          "users": 2,
+          "sessions": 2
+        },
+        {
+          "date": "2026-10-15",
+          "users": 4,
+          "sessions": 4
+        },
+        {
+          "date": "2026-10-16",
+          "users": 2,
+          "sessions": 2
+        },
+        {
+          "date": "2026-10-17",
+          "users": 4,
+          "sessions": 4
+        },
+        {
+          "date": "2026-10-18",
+          "users": 4,
+          "sessions": 4
+        },
+        {
+          "date": "2026-10-19",
+          "users": 2,
+          "sessions": 2
+        },
+        {
+          "date": "2026-10-20",
+          "users": 1,
+          "sessions": 1
+        },
+        {
+          "date": "2026-10-21",
+          "users": 11,
+          "sessions": 13
+        },
+        {
+          "date": "2026-10-22",
+          "users": 8,
+          "sessions": 8
+        },
+        {
+          "date": "2026-10-23",
+          "users": 4,
+          "sessions": 5
+        },
+        {
+          "date": "2026-10-24",
+          "users": 3,
+          "sessions": 4
+        },
+        {
+          "date": "2026-10-25",
+          "users": 4,
+          "sessions": 4
+        },
+        {
+          "date": "2026-10-26",
+          "users": 7,
+          "sessions": 9
+        },
+        {
+          "date": "2026-10-27",
+          "users": 15,
+          "sessions": 15
+        }
+      ],
+      "channels": [
+        {
+          "label": "Direct",
+          "value": 555,
+          "pct": 90.0
+        },
+        {
+          "label": "Organic Search",
+          "value": 36,
+          "pct": 5.8
+        },
+        {
+          "label": "Referral",
+          "value": 15,
+          "pct": 2.4
+        },
+        {
+          "label": "AI Assistant",
+          "value": 9,
+          "pct": 1.5
+        },
+        {
+          "label": "Unassigned",
+          "value": 2,
+          "pct": 0.3
+        }
+      ],
+      "devices": [
+        {
+          "label": "desktop",
+          "value": 564,
+          "pct": 91.6
+        },
+        {
+          "label": "mobile",
+          "value": 52,
+          "pct": 8.4
+        }
+      ],
+      "topPages": [
+        {
+          "path": "/book",
+          "title": "Check Availability & Book Canary Cove | Belize Estate",
+          "views": 224,
+          "avgEngagementSec": 12.77
+        },
+        {
+          "path": "/rates",
+          "title": "Belize Estate Rates & Add-On Pricing | Canary Cove",
+          "views": 175,
+          "avgEngagementSec": 8.7
+        },
+        {
+          "path": "/experiences",
+          "title": "Belize Experiences & Included Amenities | Canary Cove",
+          "views": 137,
+          "avgEngagementSec": 1.03
+        },
+        {
+          "path": "/stay",
+          "title": "Private Beachfront Villa in Belize | Canary Cove",
+          "views": 115,
+          "avgEngagementSec": 4.82
+        },
+        {
+          "path": "/privacy",
+          "title": "Privacy Policy | Canary Cove",
+          "views": 75,
+          "avgEngagementSec": 0.0
+        },
+        {
+          "path": "/",
+          "title": "Private Belize Estate on Ambergris Caye | Canary Cove",
+          "views": 57,
+          "avgEngagementSec": 9.3
+        },
+        {
+          "path": "/contact",
+          "title": "Contact Canary Cove | Booking Questions & Trip Planning",
+          "views": 52,
+          "avgEngagementSec": 2.19
+        },
+        {
+          "path": "/gallery",
+          "title": "Photo Gallery | Canary Cove Belize Estate",
+          "views": 41,
+          "avgEngagementSec": 2.46
+        },
+        {
+          "path": "/reviews",
+          "title": "Guest Reviews & Testimonials | Canary Cove",
+          "views": 27,
+          "avgEngagementSec": 17.57
+        },
+        {
+          "path": "/getting-here",
+          "title": "Getting to Canary Cove in Belize | Travel Guide",
+          "views": 21,
+          "avgEngagementSec": 25.9
+        }
+      ],
+      "topCountries": [
+        {
+          "label": "United States",
+          "value": 542,
+          "pct": 90.5
+        },
+        {
+          "label": "Singapore",
+          "value": 20,
+          "pct": 3.3
+        },
+        {
+          "label": "Canada",
+          "value": 8,
+          "pct": 1.3
+        },
+        {
+          "label": "Belize",
+          "value": 6,
+          "pct": 1.0
+        },
+        {
+          "label": "Brazil",
+          "value": 5,
+          "pct": 0.8
+        },
+        {
+          "label": "United Kingdom",
+          "value": 4,
+          "pct": 0.7
+        },
+        {
+          "label": "(not set)",
+          "value": 2,
+          "pct": 0.3
+        },
+        {
+          "label": "France",
+          "value": 2,
+          "pct": 0.3
+        },
+        {
+          "label": "Vietnam",
+          "value": 2,
+          "pct": 0.3
+        },
+        {
+          "label": "Argentina",
+          "value": 1,
+          "pct": 0.2
+        }
+      ]
+    },
+    "search": {
+      "kpis": [
+        {
+          "label": "Clicks",
+          "value": "24",
+          "deltaPct": -42.9
+        },
+        {
+          "label": "Impressions",
+          "value": "703",
+          "deltaPct": -13.2
+        },
+        {
+          "label": "CTR",
+          "value": "3.4%",
+          "deltaPct": -34.2
+        },
+        {
+          "label": "Avg. position",
+          "value": "15.5",
+          "invertDelta": true,
+          "deltaPct": -9.8
+        }
+      ],
+      "trend": [
+        {
+          "date": "2026-09-29",
+          "clicks": 1,
+          "impressions": 17
+        },
+        {
+          "date": "2026-09-30",
+          "clicks": 0,
+          "impressions": 17
+        },
+        {
+          "date": "2026-10-01",
+          "clicks": 0,
+          "impressions": 19
+        },
+        {
+          "date": "2026-10-02",
+          "clicks": 1,
+          "impressions": 24
+        },
+        {
+          "date": "2026-10-03",
+          "clicks": 0,
+          "impressions": 19
+        },
+        {
+          "date": "2026-10-04",
+          "clicks": 2,
+          "impressions": 21
+        },
+        {
+          "date": "2026-10-05",
+          "clicks": 1,
+          "impressions": 29
+        },
+        {
+          "date": "2026-10-06",
+          "clicks": 1,
+          "impressions": 19
+        },
+        {
+          "date": "2026-10-07",
+          "clicks": 0,
+          "impressions": 18
+        },
+        {
+          "date": "2026-10-08",
+          "clicks": 0,
+          "impressions": 21
+        },
+        {
+          "date": "2026-10-09",
+          "clicks": 1,
+          "impressions": 25
+        },
+        {
+          "date": "2026-10-10",
+          "clicks": 0,
+          "impressions": 22
+        },
+        {
+          "date": "2026-10-11",
+          "clicks": 1,
+          "impressions": 32
+        },
+        {
+          "date": "2026-10-12",
+          "clicks": 1,
+          "impressions": 31
+        },
+        {
+          "date": "2026-10-13",
+          "clicks": 1,
+          "impressions": 36
+        },
+        {
+          "date": "2026-10-14",
+          "clicks": 0,
+          "impressions": 23
+        },
+        {
+          "date": "2026-10-15",
+          "clicks": 2,
+          "impressions": 28
+        },
+        {
+          "date": "2026-10-16",
+          "clicks": 0,
+          "impressions": 28
+        },
+        {
+          "date": "2026-10-17",
+          "clicks": 1,
+          "impressions": 26
+        },
+        {
+          "date": "2026-10-18",
+          "clicks": 0,
+          "impressions": 32
+        },
+        {
+          "date": "2026-10-19",
+          "clicks": 0,
+          "impressions": 39
+        },
+        {
+          "date": "2026-10-20",
+          "clicks": 0,
+          "impressions": 18
+        },
+        {
+          "date": "2026-10-21",
+          "clicks": 4,
+          "impressions": 27
+        },
+        {
+          "date": "2026-10-22",
+          "clicks": 0,
+          "impressions": 27
+        },
+        {
+          "date": "2026-10-23",
+          "clicks": 0,
+          "impressions": 21
+        },
+        {
+          "date": "2026-10-24",
+          "clicks": 2,
+          "impressions": 25
+        },
+        {
+          "date": "2026-10-25",
+          "clicks": 1,
+          "impressions": 30
+        },
+        {
+          "date": "2026-10-26",
+          "clicks": 4,
+          "impressions": 29
+        }
+      ],
+      "topQueries": [
+        {
+          "query": "canary cove belize",
+          "clicks": 8,
+          "impressions": 14,
+          "ctr": 57.14285714285714,
+          "position": 1
+        },
+        {
+          "query": "canary cove",
+          "clicks": 5,
+          "impressions": 20,
+          "ctr": 25.0,
+          "position": 2.45
+        },
+        {
+          "query": "private chef san pedro belize",
+          "clicks": 0,
+          "impressions": 25,
+          "ctr": 0,
+          "position": 15.76
+        },
+        {
+          "query": "https://ideclare.gov.bz/belize_digital_forms/",
+          "clicks": 0,
+          "impressions": 19,
+          "ctr": 0,
+          "position": 8.263157894736842
+        },
+        {
+          "query": "belizean cove estates reviews",
+          "clicks": 0,
+          "impressions": 17,
+          "ctr": 0,
+          "position": 18.058823529411764
+        },
+        {
+          "query": "ambergris caye vacation rentals",
+          "clicks": 0,
+          "impressions": 13,
+          "ctr": 0,
+          "position": 44.69230769230769
+        },
+        {
+          "query": "belize staffed villas",
+          "clicks": 0,
+          "impressions": 11,
+          "ctr": 0,
+          "position": 10.545454545454545
+        },
+        {
+          "query": "belize vacation rentals ambergris caye",
+          "clicks": 0,
+          "impressions": 11,
+          "ctr": 0,
+          "position": 30.818181818181817
+        },
+        {
+          "query": "ambergris caye villa rentals",
+          "clicks": 0,
+          "impressions": 10,
+          "ctr": 0,
+          "position": 25.3
+        },
+        {
+          "query": "belizean cove faq",
+          "clicks": 0,
+          "impressions": 10,
+          "ctr": 0,
+          "position": 45.9
+        }
+      ],
+      "topPages": [
+        {
+          "page": "https://www.canarycove.com/",
+          "clicks": 12,
+          "impressions": 371,
+          "ctr": 3.234501347708895,
+          "position": 17.49056603773585
+        },
+        {
+          "page": "https://canarycove.com/",
+          "clicks": 8,
+          "impressions": 42,
+          "ctr": 19.047619047619047,
+          "position": 6.738095238095238
+        },
+        {
+          "page": "https://www.canarycove.com/dining",
+          "clicks": 3,
+          "impressions": 196,
+          "ctr": 1.530612244897959,
+          "position": 8.862244897959183
+        },
+        {
+          "page": "https://www.canarycove.com/rates",
+          "clicks": 1,
+          "impressions": 69,
+          "ctr": 1.4492753623188406,
+          "position": 9.057971014492754
+        },
+        {
+          "page": "https://www.canarycove.com/getting-here",
+          "clicks": 0,
+          "impressions": 97,
+          "ctr": 0,
+          "position": 7.123711340206185
+        },
+        {
+          "page": "https://www.canarycove.com/stay",
+          "clicks": 0,
+          "impressions": 91,
+          "ctr": 0,
+          "position": 11.868131868131869
+        },
+        {
+          "page": "https://www.canarycove.com/adventures",
+          "clicks": 0,
+          "impressions": 53,
+          "ctr": 0,
+          "position": 24.62264150943396
+        },
+        {
+          "page": "https://www.canarycove.com/experiences",
+          "clicks": 0,
+          "impressions": 45,
+          "ctr": 0,
+          "position": 13.822222222222223
+        },
+        {
+          "page": "https://www.canarycove.com/gallery",
+          "clicks": 0,
+          "impressions": 38,
+          "ctr": 0,
+          "position": 5.447368421052632
+        },
+        {
+          "page": "https://www.canarycove.com/book",
+          "clicks": 0,
+          "impressions": 34,
+          "ctr": 0,
+          "position": 3.3823529411764706
+        }
+      ]
+    }
+  },
+  "belize-kids": {
+    "siteId": "belize-kids",
+    "review": "reviewed",
+    "note": "GA4 489942783: belizekids.org + www.belizekids.org; localhost, previews and other hosts excluded. Search Console: sc-domain:belizekids.org (all domain hosts). GA4 newest days can revise. Search final data: Sep 29\u2013Oct 26, compared with Sep 1\u201328. Comparisons use the same production-host filter.",
+    "periodLabel": "Last 28 complete calendar days",
+    "comparisonLabel": "vs. Sep 2\u201329, 2026",
+    "rangeStart": "2026-09-30",
+    "rangeEnd": "2026-10-27",
+    "searchRangeStart": "2026-09-29",
+    "searchRangeEnd": "2026-10-26",
+    "updatedAt": "2026-10-28T17:08:58Z",
+    "analytics": {
+      "kpis": [
+        {
+          "label": "Active users",
+          "value": "43",
+          "deltaPct": 30.3
+        },
+        {
+          "label": "Sessions",
+          "value": "44",
+          "deltaPct": 12.8
+        },
+        {
+          "label": "New users",
+          "value": "43",
+          "deltaPct": 34.4
+        },
+        {
+          "label": "Engagement rate",
+          "value": "15.9%",
+          "deltaPct": -52.3
+        },
+        {
+          "label": "Avg. engagement",
+          "value": "7s",
+          "caption": "Engagement time per active user",
+          "deltaPct": -79.0
+        },
+        {
+          "label": "Page views",
+          "value": "4",
+          "deltaPct": -69.2
+        }
+      ],
+      "trafficTrend": [
+        {
+          "date": "2026-09-30",
+          "users": 2,
+          "sessions": 2
+        },
+        {
+          "date": "2026-10-01",
+          "users": 2,
+          "sessions": 2
+        },
+        {
+          "date": "2026-10-02",
+          "users": 0,
+          "sessions": 0
+        },
+        {
+          "date": "2026-10-03",
+          "users": 1,
+          "sessions": 1
+        },
+        {
+          "date": "2026-10-04",
+          "users": 0,
+          "sessions": 0
+        },
+        {
+          "date": "2026-10-05",
+          "users": 2,
+          "sessions": 2
+        },
+        {
+          "date": "2026-10-06",
+          "users": 1,
+          "sessions": 1
+        },
+        {
+          "date": "2026-10-07",
+          "users": 0,
+          "sessions": 0
+        },
+        {
+          "date": "2026-10-08",
+          "users": 1,
+          "sessions": 1
+        },
+        {
+          "date": "2026-10-09",
+          "users": 3,
+          "sessions": 3
+        },
+        {
+          "date": "2026-10-10",
+          "users": 1,
+          "sessions": 1
+        },
+        {
+          "date": "2026-10-11",
+          "users": 2,
+          "sessions": 2
+        },
+        {
+          "date": "2026-10-12",
+          "users": 9,
+          "sessions": 9
+        },
+        {
+          "date": "2026-10-13",
+          "users": 1,
+          "sessions": 1
+        },
+        {
+          "date": "2026-10-14",
+          "users": 2,
+          "sessions": 2
+        },
+        {
+          "date": "2026-10-15",
+          "users": 1,
+          "sessions": 1
+        },
+        {
+          "date": "2026-10-16",
+          "users": 1,
+          "sessions": 1
+        },
+        {
+          "date": "2026-10-17",
+          "users": 2,
+          "sessions": 2
+        },
+        {
+          "date": "2026-10-18",
+          "users": 1,
+          "sessions": 1
+        },
+        {
+          "date": "2026-10-19",
+          "users": 1,
+          "sessions": 1
+        },
+        {
+          "date": "2026-10-20",
+          "users": 0,
+          "sessions": 0
+        },
+        {
+          "date": "2026-10-21",
+          "users": 3,
+          "sessions": 4
+        },
+        {
+          "date": "2026-10-22",
+          "users": 2,
+          "sessions": 2
+        },
+        {
+          "date": "2026-10-23",
+          "users": 1,
+          "sessions": 1
+        },
+        {
+          "date": "2026-10-24",
+          "users": 3,
+          "sessions": 3
+        },
+        {
+          "date": "2026-10-25",
+          "users": 0,
+          "sessions": 0
+        },
+        {
+          "date": "2026-10-26",
+          "users": 1,
+          "sessions": 1
+        },
+        {
+          "date": "2026-10-27",
+          "users": 0,
+          "sessions": 0
+        }
+      ],
+      "channels": [
+        {
+          "label": "Direct",
+          "value": 24,
+          "pct": 54.5
+        },
+        {
+          "label": "Organic Search",
+          "value": 18,
+          "pct": 40.9
+        },
+        {
+          "label": "Organic Social",
+          "value": 2,
+          "pct": 4.5
+        }
+      ],
+      "devices": [
+        {
+          "label": "desktop",
+          "value": 26,
+          "pct": 59.1
+        },
+        {
+          "label": "mobile",
+          "value": 17,
+          "pct": 38.6
+        },
+        {
+          "label": "tablet",
+          "value": 1,
+          "pct": 2.3
+        }
+      ],
+      "topPages": [
+        {
+          "path": "/",
+          "title": "Belize Kids - Transparent Charity Supporting Children's Education & Healthcare in Belize",
+          "views": 1,
+          "avgEngagementSec": 7.0
+        },
+        {
+          "path": "/leadership",
+          "title": "Leadership Team - Experienced Founders & Board Members | Belize Kids",
+          "views": 1,
+          "avgEngagementSec": 14.0
+        },
+        {
+          "path": "/projects",
+          "title": "Belize Kids - Transparent Charity Supporting Children's Education & Healthcare in Belize",
+          "views": 1,
+          "avgEngagementSec": 0.0
+        },
+        {
+          "path": "/projects",
+          "title": "Our Impact Projects - Schools, Healthcare & Education in Belize | Belize Kids",
+          "views": 1,
+          "avgEngagementSec": 38.0
+        }
+      ],
+      "topCountries": [
+        {
+          "label": "United States",
+          "value": 26,
+          "pct": 60.5
+        },
+        {
+          "label": "Belize",
+          "value": 9,
+          "pct": 20.9
+        },
+        {
+          "label": "Germany",
+          "value": 4,
+          "pct": 9.3
+        },
+        {
+          "label": "Singapore",
+          "value": 3,
+          "pct": 7.0
+        },
+        {
+          "label": "India",
+          "value": 1,
+          "pct": 2.3
+        }
+      ]
+    },
+    "search": {
+      "kpis": [
+        {
+          "label": "Clicks",
+          "value": "21",
+          "deltaPct": -19.2
+        },
+        {
+          "label": "Impressions",
+          "value": "601",
+          "deltaPct": -6.5
+        },
+        {
+          "label": "CTR",
+          "value": "3.5%",
+          "deltaPct": -13.6
+        },
+        {
+          "label": "Avg. position",
+          "value": "8.8",
+          "invertDelta": true,
+          "deltaPct": 13.6
+        }
+      ],
+      "trend": [
+        {
+          "date": "2026-09-29",
+          "clicks": 0,
+          "impressions": 16
+        },
+        {
+          "date": "2026-09-30",
+          "clicks": 2,
+          "impressions": 21
+        },
+        {
+          "date": "2026-10-01",
+          "clicks": 0,
+          "impressions": 13
+        },
+        {
+          "date": "2026-10-02",
+          "clicks": 0,
+          "impressions": 21
+        },
+        {
+          "date": "2026-10-03",
+          "clicks": 1,
+          "impressions": 12
+        },
+        {
+          "date": "2026-10-04",
+          "clicks": 0,
+          "impressions": 23
+        },
+        {
+          "date": "2026-10-05",
+          "clicks": 0,
+          "impressions": 16
+        },
+        {
+          "date": "2026-10-06",
+          "clicks": 1,
+          "impressions": 21
+        },
+        {
+          "date": "2026-10-07",
+          "clicks": 0,
+          "impressions": 21
+        },
+        {
+          "date": "2026-10-08",
+          "clicks": 2,
+          "impressions": 16
+        },
+        {
+          "date": "2026-10-09",
+          "clicks": 1,
+          "impressions": 18
+        },
+        {
+          "date": "2026-10-10",
+          "clicks": 0,
+          "impressions": 14
+        },
+        {
+          "date": "2026-10-11",
+          "clicks": 2,
+          "impressions": 18
+        },
+        {
+          "date": "2026-10-12",
+          "clicks": 2,
+          "impressions": 19
+        },
+        {
+          "date": "2026-10-13",
+          "clicks": 1,
+          "impressions": 18
+        },
+        {
+          "date": "2026-10-14",
+          "clicks": 3,
+          "impressions": 19
+        },
+        {
+          "date": "2026-10-15",
+          "clicks": 0,
+          "impressions": 11
+        },
+        {
+          "date": "2026-10-16",
+          "clicks": 0,
+          "impressions": 18
+        },
+        {
+          "date": "2026-10-17",
+          "clicks": 0,
+          "impressions": 9
+        },
+        {
+          "date": "2026-10-18",
+          "clicks": 0,
+          "impressions": 19
+        },
+        {
+          "date": "2026-10-19",
+          "clicks": 0,
+          "impressions": 121
+        },
+        {
+          "date": "2026-10-20",
+          "clicks": 0,
+          "impressions": 22
+        },
+        {
+          "date": "2026-10-21",
+          "clicks": 2,
+          "impressions": 26
+        },
+        {
+          "date": "2026-10-22",
+          "clicks": 1,
+          "impressions": 23
+        },
+        {
+          "date": "2026-10-23",
+          "clicks": 0,
+          "impressions": 22
+        },
+        {
+          "date": "2026-10-24",
+          "clicks": 2,
+          "impressions": 14
+        },
+        {
+          "date": "2026-10-25",
+          "clicks": 0,
+          "impressions": 16
+        },
+        {
+          "date": "2026-10-26",
+          "clicks": 1,
+          "impressions": 14
+        }
+      ],
+      "topQueries": [
+        {
+          "query": "belize kids",
+          "clicks": 1,
+          "impressions": 10,
+          "ctr": 10.0,
+          "position": 6.2
+        },
+        {
+          "query": "eye doctor near me",
+          "clicks": 1,
+          "impressions": 7,
+          "ctr": 14.285714285714285,
+          "position": 8
+        },
+        {
+          "query": "belize child health",
+          "clicks": 0,
+          "impressions": 26,
+          "ctr": 0,
+          "position": 12.23076923076923
+        },
+        {
+          "query": "belize children's project",
+          "clicks": 0,
+          "impressions": 9,
+          "ctr": 0,
+          "position": 21
+        },
+        {
+          "query": "san pedro roman catholic school",
+          "clicks": 0,
+          "impressions": 9,
+          "ctr": 0,
+          "position": 6.333333333333333
+        },
+        {
+          "query": "belize vision center",
+          "clicks": 0,
+          "impressions": 6,
+          "ctr": 0,
+          "position": 10.166666666666666
+        },
+        {
+          "query": "eye clinic",
+          "clicks": 0,
+          "impressions": 5,
+          "ctr": 0,
+          "position": 11.4
+        },
+        {
+          "query": "clinic in san pedro",
+          "clicks": 0,
+          "impressions": 4,
+          "ctr": 0,
+          "position": 10
+        },
+        {
+          "query": "eye doctor",
+          "clicks": 0,
+          "impressions": 4,
+          "ctr": 0,
+          "position": 8.75
+        },
+        {
+          "query": "belize eye",
+          "clicks": 0,
+          "impressions": 3,
+          "ctr": 0,
+          "position": 10.333333333333334
+        }
+      ],
+      "topPages": [
+        {
+          "page": "https://www.belizekids.org/",
+          "clicks": 10,
+          "impressions": 182,
+          "ctr": 5.4945054945054945,
+          "position": 7.324175824175824
+        },
+        {
+          "page": "https://www.belizekids.org/doctors",
+          "clicks": 4,
+          "impressions": 227,
+          "ctr": 1.762114537444934,
+          "position": 10.162995594713657
+        },
+        {
+          "page": "https://www.belizekids.org/projects/october-vision-clinic",
+          "clicks": 4,
+          "impressions": 170,
+          "ctr": 2.3529411764705883,
+          "position": 17.394117647058824
+        },
+        {
+          "page": "https://www.belizekids.org/leadership",
+          "clicks": 3,
+          "impressions": 52,
+          "ctr": 5.769230769230769,
+          "position": 7.923076923076923
+        },
+        {
+          "page": "https://www.belizekids.org/projects/sprc-primary-school",
+          "clicks": 0,
+          "impressions": 69,
+          "ctr": 0,
+          "position": 7.666666666666667
+        },
+        {
+          "page": "https://www.belizekids.org/projects/second-vision-screening-machine",
+          "clicks": 0,
+          "impressions": 12,
+          "ctr": 0,
+          "position": 26.083333333333332
+        },
+        {
+          "page": "https://www.belizekids.org/projects",
+          "clicks": 0,
+          "impressions": 11,
+          "ctr": 0,
+          "position": 14.818181818181818
+        },
+        {
+          "page": "https://www.belizekids.org/projects/eye-screening-equipment",
+          "clicks": 0,
+          "impressions": 9,
+          "ctr": 0,
+          "position": 13.777777777777779
+        },
+        {
+          "page": "https://www.belizekids.org/monthly-investment",
+          "clicks": 0,
+          "impressions": 8,
+          "ctr": 0,
+          "position": 6.125
+        },
+        {
+          "page": "https://www.belizekids.org/privacy",
+          "clicks": 0,
+          "impressions": 8,
+          "ctr": 0,
+          "position": 4.625
+        }
+      ]
+    }
+  },
+  "listwin-ventures": {
+    "siteId": "listwin-ventures",
+    "review": "reviewed",
+    "note": "GA4 514358412: listwinventures.com + www.listwinventures.com; localhost, previews and other hosts excluded. Search Console: sc-domain:listwinventures.com (all domain hosts). GA4 newest days can revise. Search final data: Sep 29\u2013Oct 26, compared with Sep 1\u201328. Comparisons use the same production-host filter.",
+    "periodLabel": "Last 28 complete calendar days",
+    "comparisonLabel": "vs. Sep 2\u201329, 2026",
+    "rangeStart": "2026-09-30",
+    "rangeEnd": "2026-10-27",
+    "searchRangeStart": "2026-09-29",
+    "searchRangeEnd": "2026-10-26",
+    "updatedAt": "2026-10-28T17:08:58Z",
+    "analytics": {
+      "kpis": [
+        {
+          "label": "Active users",
+          "value": "24",
+          "deltaPct": 14.3
+        },
+        {
+          "label": "Sessions",
+          "value": "32",
+          "deltaPct": 39.1
+        },
+        {
+          "label": "New users",
+          "value": "23",
+          "deltaPct": 9.5
+        },
+        {
+          "label": "Engagement rate",
+          "value": "37.5%",
+          "deltaPct": -13.7
+        },
+        {
+          "label": "Avg. engagement",
+          "value": "17s",
+          "caption": "Engagement time per active user",
+          "deltaPct": -21.4
+        },
+        {
+          "label": "Page views",
+          "value": "44",
+          "deltaPct": 37.5
+        }
+      ],
+      "trafficTrend": [
+        {
+          "date": "2026-09-30",
+          "users": 1,
+          "sessions": 1
+        },
+        {
+          "date": "2026-10-01",
+          "users": 0,
+          "sessions": 0
+        },
+        {
+          "date": "2026-10-02",
+          "users": 0,
+          "sessions": 0
+        },
+        {
+          "date": "2026-10-03",
+          "users": 0,
+          "sessions": 0
+        },
+        {
+          "date": "2026-10-04",
+          "users": 2,
+          "sessions": 2
+        },
+        {
+          "date": "2026-10-05",
+          "users": 0,
+          "sessions": 0
+        },
+        {
+          "date": "2026-10-06",
+          "users": 0,
+          "sessions": 0
+        },
+        {
+          "date": "2026-10-07",
+          "users": 0,
+          "sessions": 0
+        },
+        {
+          "date": "2026-10-08",
+          "users": 2,
+          "sessions": 2
+        },
+        {
+          "date": "2026-10-09",
+          "users": 0,
+          "sessions": 0
+        },
+        {
+          "date": "2026-10-10",
+          "users": 0,
+          "sessions": 1
+        },
+        {
+          "date": "2026-10-11",
+          "users": 2,
+          "sessions": 3
+        },
+        {
+          "date": "2026-10-12",
+          "users": 4,
+          "sessions": 4
+        },
+        {
+          "date": "2026-10-13",
+          "users": 3,
+          "sessions": 4
+        },
+        {
+          "date": "2026-10-14",
+          "users": 2,
+          "sessions": 2
+        },
+        {
+          "date": "2026-10-15",
+          "users": 0,
+          "sessions": 1
+        },
+        {
+          "date": "2026-10-16",
+          "users": 0,
+          "sessions": 0
+        },
+        {
+          "date": "2026-10-17",
+          "users": 0,
+          "sessions": 0
+        },
+        {
+          "date": "2026-10-18",
+          "users": 2,
+          "sessions": 2
+        },
+        {
+          "date": "2026-10-19",
+          "users": 1,
+          "sessions": 1
+        },
+        {
+          "date": "2026-10-20",
+          "users": 1,
+          "sessions": 1
+        },
+        {
+          "date": "2026-10-21",
+          "users": 0,
+          "sessions": 0
+        },
+        {
+          "date": "2026-10-22",
+          "users": 0,
+          "sessions": 1
+        },
+        {
+          "date": "2026-10-23",
+          "users": 1,
+          "sessions": 1
+        },
+        {
+          "date": "2026-10-24",
+          "users": 0,
+          "sessions": 0
+        },
+        {
+          "date": "2026-10-25",
+          "users": 2,
+          "sessions": 2
+        },
+        {
+          "date": "2026-10-26",
+          "users": 1,
+          "sessions": 2
+        },
+        {
+          "date": "2026-10-27",
+          "users": 0,
+          "sessions": 2
+        }
+      ],
+      "channels": [
+        {
+          "label": "Direct",
+          "value": 19,
+          "pct": 59.4
+        },
+        {
+          "label": "Organic Search",
+          "value": 11,
+          "pct": 34.4
+        },
+        {
+          "label": "Referral",
+          "value": 2,
+          "pct": 6.2
+        }
+      ],
+      "devices": [
+        {
+          "label": "desktop",
+          "value": 21,
+          "pct": 65.6
+        },
+        {
+          "label": "mobile",
+          "value": 11,
+          "pct": 34.4
+        }
+      ],
+      "topPages": [
+        {
+          "path": "/",
+          "title": "Don Listwin, Technology Investor | Listwin Ventures",
+          "views": 25,
+          "avgEngagementSec": 13.54
+        },
+        {
+          "path": "/press",
+          "title": "Don Listwin Press & References | Listwin Ventures",
+          "views": 5,
+          "avgEngagementSec": 14.8
+        },
+        {
+          "path": "/contact",
+          "title": "Contact Listwin Ventures | Investment and Media Inquiries",
+          "views": 3,
+          "avgEngagementSec": 2.67
+        },
+        {
+          "path": "/company/uberflip",
+          "title": "Uberflip \u2014 Don Listwin | Listwin Ventures",
+          "views": 2,
+          "avgEngagementSec": 1.0
+        },
+        {
+          "path": "/4ag",
+          "title": "4AG Robotics: Mushroom Harvesting | Listwin Ventures",
+          "views": 1,
+          "avgEngagementSec": 46.0
+        },
+        {
+          "path": "/about",
+          "title": "Page not found | Listwin Ventures",
+          "views": 1,
+          "avgEngagementSec": 0.0
+        },
+        {
+          "path": "/company/awarex",
+          "title": "AwareX \u2014 Don Listwin | Listwin Ventures",
+          "views": 1,
+          "avgEngagementSec": 6.0
+        },
+        {
+          "path": "/company/canary-foundation",
+          "title": "Canary Foundation \u2014 Don Listwin | Listwin Ventures",
+          "views": 1,
+          "avgEngagementSec": 66.0
+        },
+        {
+          "path": "/company/plumgrid",
+          "title": "PLUMgrid \u2014 Don Listwin | Listwin Ventures",
+          "views": 1,
+          "avgEngagementSec": 7.0
+        },
+        {
+          "path": "/company/sequoia",
+          "title": "Sequoia Capital \u2014 Don Listwin | Listwin Ventures",
+          "views": 1,
+          "avgEngagementSec": 0.0
+        }
+      ],
+      "topCountries": [
+        {
+          "label": "United States",
+          "value": 15,
+          "pct": 62.5
+        },
+        {
+          "label": "India",
+          "value": 4,
+          "pct": 16.7
+        },
+        {
+          "label": "(not set)",
+          "value": 1,
+          "pct": 4.2
+        },
+        {
+          "label": "Canada",
+          "value": 1,
+          "pct": 4.2
+        },
+        {
+          "label": "China",
+          "value": 1,
+          "pct": 4.2
+        },
+        {
+          "label": "Japan",
+          "value": 1,
+          "pct": 4.2
+        },
+        {
+          "label": "United Kingdom",
+          "value": 1,
+          "pct": 4.2
+        }
+      ]
+    },
+    "search": {
+      "kpis": [
+        {
+          "label": "Clicks",
+          "value": "40",
+          "deltaPct": -2.4
+        },
+        {
+          "label": "Impressions",
+          "value": "1,366",
+          "deltaPct": -30.8
+        },
+        {
+          "label": "CTR",
+          "value": "2.9%",
+          "deltaPct": 41.1
+        },
+        {
+          "label": "Avg. position",
+          "value": "8.4",
+          "invertDelta": true,
+          "deltaPct": 5.0
+        }
+      ],
+      "trend": [
+        {
+          "date": "2026-09-29",
+          "clicks": 2,
+          "impressions": 46
+        },
+        {
+          "date": "2026-09-30",
+          "clicks": 0,
+          "impressions": 38
+        },
+        {
+          "date": "2026-10-01",
+          "clicks": 3,
+          "impressions": 36
+        },
+        {
+          "date": "2026-10-02",
+          "clicks": 1,
+          "impressions": 54
+        },
+        {
+          "date": "2026-10-03",
+          "clicks": 0,
+          "impressions": 44
+        },
+        {
+          "date": "2026-10-04",
+          "clicks": 1,
+          "impressions": 44
+        },
+        {
+          "date": "2026-10-05",
+          "clicks": 1,
+          "impressions": 29
+        },
+        {
+          "date": "2026-10-06",
+          "clicks": 7,
+          "impressions": 57
+        },
+        {
+          "date": "2026-10-07",
+          "clicks": 1,
+          "impressions": 48
+        },
+        {
+          "date": "2026-10-08",
+          "clicks": 1,
+          "impressions": 59
+        },
+        {
+          "date": "2026-10-09",
+          "clicks": 0,
+          "impressions": 50
+        },
+        {
+          "date": "2026-10-10",
+          "clicks": 2,
+          "impressions": 30
+        },
+        {
+          "date": "2026-10-11",
+          "clicks": 1,
+          "impressions": 32
+        },
+        {
+          "date": "2026-10-12",
+          "clicks": 2,
+          "impressions": 76
+        },
+        {
+          "date": "2026-10-13",
+          "clicks": 4,
+          "impressions": 54
+        },
+        {
+          "date": "2026-10-14",
+          "clicks": 0,
+          "impressions": 62
+        },
+        {
+          "date": "2026-10-15",
+          "clicks": 0,
+          "impressions": 57
+        },
+        {
+          "date": "2026-10-16",
+          "clicks": 1,
+          "impressions": 54
+        },
+        {
+          "date": "2026-10-17",
+          "clicks": 0,
+          "impressions": 39
+        },
+        {
+          "date": "2026-10-18",
+          "clicks": 2,
+          "impressions": 36
+        },
+        {
+          "date": "2026-10-19",
+          "clicks": 3,
+          "impressions": 57
+        },
+        {
+          "date": "2026-10-20",
+          "clicks": 1,
+          "impressions": 54
+        },
+        {
+          "date": "2026-10-21",
+          "clicks": 0,
+          "impressions": 53
+        },
+        {
+          "date": "2026-10-22",
+          "clicks": 0,
+          "impressions": 48
+        },
+        {
+          "date": "2026-10-23",
+          "clicks": 3,
+          "impressions": 54
+        },
+        {
+          "date": "2026-10-24",
+          "clicks": 1,
+          "impressions": 37
+        },
+        {
+          "date": "2026-10-25",
+          "clicks": 2,
+          "impressions": 53
+        },
+        {
+          "date": "2026-10-26",
+          "clicks": 1,
+          "impressions": 65
+        }
+      ],
+      "topQueries": [
+        {
+          "query": "don listwin",
+          "clicks": 17,
+          "impressions": 74,
+          "ctr": 22.972972972972975,
+          "position": 1.7432432432432432
+        },
+        {
+          "query": "awarex",
+          "clicks": 1,
+          "impressions": 81,
+          "ctr": 1.2345679012345678,
+          "position": 8.567901234567902
+        },
+        {
+          "query": "don listwin net worth",
+          "clicks": 1,
+          "impressions": 12,
+          "ctr": 8.333333333333332,
+          "position": 6.916666666666667
+        },
+        {
+          "query": "caltech heritage project",
+          "clicks": 1,
+          "impressions": 10,
+          "ctr": 10.0,
+          "position": 6.8
+        },
+        {
+          "query": "plumgrid",
+          "clicks": 0,
+          "impressions": 34,
+          "ctr": 0,
+          "position": 8.352941176470587
+        },
+        {
+          "query": "4ag",
+          "clicks": 0,
+          "impressions": 31,
+          "ctr": 0,
+          "position": 10.483870967741936
+        },
+        {
+          "query": "4ag robotics",
+          "clicks": 0,
+          "impressions": 30,
+          "ctr": 0,
+          "position": 9.1
+        },
+        {
+          "query": "joyent",
+          "clicks": 0,
+          "impressions": 26,
+          "ctr": 0,
+          "position": 18.03846153846154
+        },
+        {
+          "query": "genologics",
+          "clicks": 0,
+          "impressions": 25,
+          "ctr": 0,
+          "position": 7.6
+        },
+        {
+          "query": "listwin",
+          "clicks": 0,
+          "impressions": 20,
+          "ctr": 0,
+          "position": 1.7
+        }
+      ],
+      "topPages": [
+        {
+          "page": "https://www.listwinventures.com/",
+          "clicks": 29,
+          "impressions": 286,
+          "ctr": 10.13986013986014,
+          "position": 3.7867132867132867
+        },
+        {
+          "page": "https://www.listwinventures.com/oral-history-caltech",
+          "clicks": 3,
+          "impressions": 35,
+          "ctr": 8.571428571428571,
+          "position": 9.057142857142857
+        },
+        {
+          "page": "https://www.listwinventures.com/company/canary-foundation",
+          "clicks": 2,
+          "impressions": 55,
+          "ctr": 3.6363636363636362,
+          "position": 9.163636363636364
+        },
+        {
+          "page": "https://www.listwinventures.com/company/clarius",
+          "clicks": 2,
+          "impressions": 36,
+          "ctr": 5.555555555555555,
+          "position": 8.88888888888889
+        },
+        {
+          "page": "https://www.listwinventures.com/4ag",
+          "clicks": 1,
+          "impressions": 244,
+          "ctr": 0.4098360655737705,
+          "position": 9.315573770491802
+        },
+        {
+          "page": "https://www.listwinventures.com/company/awarex",
+          "clicks": 1,
+          "impressions": 123,
+          "ctr": 0.8130081300813009,
+          "position": 7.569105691056911
+        },
+        {
+          "page": "https://www.listwinventures.com/oral-history",
+          "clicks": 1,
+          "impressions": 31,
+          "ctr": 3.225806451612903,
+          "position": 6.870967741935484
+        },
+        {
+          "page": "https://www.listwinventures.com/company/sequoia",
+          "clicks": 1,
+          "impressions": 12,
+          "ctr": 8.333333333333332,
+          "position": 4.916666666666666
+        },
+        {
+          "page": "https://www.listwinventures.com/company/carbon-robotics",
+          "clicks": 0,
+          "impressions": 70,
+          "ctr": 0,
+          "position": 10.685714285714285
+        },
+        {
+          "page": "https://www.listwinventures.com/genologics",
+          "clicks": 0,
+          "impressions": 59,
+          "ctr": 0,
+          "position": 8.406779661016948
+        }
+      ]
+    }
+  },
+  "canary-foundation": {
+    "siteId": "canary-foundation",
+    "review": "reviewed",
+    "note": "GA4 311697082: canaryfoundation.org + www.canaryfoundation.org; localhost, previews and other hosts excluded. Search Console: sc-domain:canaryfoundation.org (all domain hosts). GA4 newest days can revise. Search final data: Sep 29\u2013Oct 26, compared with Sep 1\u201328. Comparisons use the same production-host filter.",
+    "periodLabel": "Last 28 complete calendar days",
+    "comparisonLabel": "vs. Sep 2\u201329, 2026",
+    "rangeStart": "2026-09-30",
+    "rangeEnd": "2026-10-27",
+    "searchRangeStart": "2026-09-29",
+    "searchRangeEnd": "2026-10-26",
+    "updatedAt": "2026-10-28T17:08:58Z",
+    "analytics": {
+      "kpis": [
+        {
+          "label": "Active users",
+          "value": "698",
+          "deltaPct": -11.1
+        },
+        {
+          "label": "Sessions",
+          "value": "765",
+          "deltaPct": -10.4
+        },
+        {
+          "label": "New users",
+          "value": "689",
+          "deltaPct": -11.1
+        },
+        {
+          "label": "Engagement rate",
+          "value": "18.7%",
+          "deltaPct": -1.5
+        },
+        {
+          "label": "Avg. engagement",
+          "value": "18s",
+          "caption": "Engagement time per active user",
+          "deltaPct": 38.8
+        },
+        {
+          "label": "Page views",
+          "value": "1,046",
+          "deltaPct": -7.4
+        }
+      ],
+      "trafficTrend": [
+        {
+          "date": "2026-09-30",
+          "users": 15,
+          "sessions": 17
+        },
+        {
+          "date": "2026-10-01",
+          "users": 31,
+          "sessions": 33
+        },
+        {
+          "date": "2026-10-02",
+          "users": 24,
+          "sessions": 27
+        },
+        {
+          "date": "2026-10-03",
+          "users": 30,
+          "sessions": 31
+        },
+        {
+          "date": "2026-10-04",
+          "users": 48,
+          "sessions": 48
+        },
+        {
+          "date": "2026-10-05",
+          "users": 44,
+          "sessions": 44
+        },
+        {
+          "date": "2026-10-06",
+          "users": 47,
+          "sessions": 50
+        },
+        {
+          "date": "2026-10-07",
+          "users": 34,
+          "sessions": 42
+        },
+        {
+          "date": "2026-10-08",
+          "users": 44,
+          "sessions": 51
+        },
+        {
+          "date": "2026-10-09",
+          "users": 30,
+          "sessions": 32
+        },
+        {
+          "date": "2026-10-10",
+          "users": 26,
+          "sessions": 27
+        },
+        {
+          "date": "2026-10-11",
+          "users": 29,
+          "sessions": 30
+        },
+        {
+          "date": "2026-10-12",
+          "users": 24,
+          "sessions": 26
+        },
+        {
+          "date": "2026-10-13",
+          "users": 17,
+          "sessions": 18
+        },
+        {
+          "date": "2026-10-14",
+          "users": 14,
+          "sessions": 16
+        },
+        {
+          "date": "2026-10-15",
+          "users": 16,
+          "sessions": 20
+        },
+        {
+          "date": "2026-10-16",
+          "users": 13,
+          "sessions": 16
+        },
+        {
+          "date": "2026-10-17",
+          "users": 11,
+          "sessions": 12
+        },
+        {
+          "date": "2026-10-18",
+          "users": 23,
+          "sessions": 25
+        },
+        {
+          "date": "2026-10-19",
+          "users": 16,
+          "sessions": 19
+        },
+        {
+          "date": "2026-10-20",
+          "users": 16,
+          "sessions": 17
+        },
+        {
+          "date": "2026-10-21",
+          "users": 21,
+          "sessions": 22
+        },
+        {
+          "date": "2026-10-22",
+          "users": 34,
+          "sessions": 36
+        },
+        {
+          "date": "2026-10-23",
+          "users": 12,
+          "sessions": 12
+        },
+        {
+          "date": "2026-10-24",
+          "users": 14,
+          "sessions": 15
+        },
+        {
+          "date": "2026-10-25",
+          "users": 22,
+          "sessions": 22
+        },
+        {
+          "date": "2026-10-26",
+          "users": 24,
+          "sessions": 26
+        },
+        {
+          "date": "2026-10-27",
+          "users": 31,
+          "sessions": 31
+        }
+      ],
+      "channels": [
+        {
+          "label": "Direct",
+          "value": 504,
+          "pct": 65.8
+        },
+        {
+          "label": "Organic Search",
+          "value": 170,
+          "pct": 22.2
+        },
+        {
+          "label": "Referral",
+          "value": 77,
+          "pct": 10.1
+        },
+        {
+          "label": "Unassigned",
+          "value": 7,
+          "pct": 0.9
+        },
+        {
+          "label": "AI Assistant",
+          "value": 5,
+          "pct": 0.7
+        },
+        {
+          "label": "Organic Social",
+          "value": 2,
+          "pct": 0.3
+        },
+        {
+          "label": "Organic Video",
+          "value": 1,
+          "pct": 0.1
+        }
+      ],
+      "devices": [
+        {
+          "label": "desktop",
+          "value": 673,
+          "pct": 87.9
+        },
+        {
+          "label": "mobile",
+          "value": 90,
+          "pct": 11.7
+        },
+        {
+          "label": "tablet",
+          "value": 3,
+          "pct": 0.4
+        }
+      ],
+      "topPages": [
+        {
+          "path": "/",
+          "title": "Canary Foundation - Early Cancer Detection Research",
+          "views": 376,
+          "avgEngagementSec": 8.29
+        },
+        {
+          "path": "/oral-history",
+          "title": "Don Listwin | Founder's Story & Oral History | Canary Foundation",
+          "views": 52,
+          "avgEngagementSec": 6.31
+        },
+        {
+          "path": "/contact",
+          "title": "Contact Canary Foundation",
+          "views": 35,
+          "avgEngagementSec": 39.21
+        },
+        {
+          "path": "/about/board-directors",
+          "title": "Board of Directors | Canary Foundation",
+          "views": 33,
+          "avgEngagementSec": 15.19
+        },
+        {
+          "path": "/blog",
+          "title": "Early Cancer Detection News & Research | Canary Foundation",
+          "views": 28,
+          "avgEngagementSec": 4.75
+        },
+        {
+          "path": "/donate",
+          "title": "Donate to Early Cancer Detection | Canary Foundation",
+          "views": 26,
+          "avgEngagementSec": 1.77
+        },
+        {
+          "path": "/about/overview",
+          "title": "About Canary Foundation | Early Cancer Detection Nonprofit",
+          "views": 19,
+          "avgEngagementSec": 10.12
+        },
+        {
+          "path": "/blog/canary-foundation-program-report-2025",
+          "title": "Canary Foundation 2025 Program Highlights: Accelerating Early Detection | Canary Foundation",
+          "views": 17,
+          "avgEngagementSec": 11.85
+        },
+        {
+          "path": "/about/financials",
+          "title": "Financials | Canary Foundation",
+          "views": 16,
+          "avgEngagementSec": 43.82
+        },
+        {
+          "path": "/science/programs/tumors/prostate",
+          "title": "Prostate Cancer Research | Canary Foundation",
+          "views": 13,
+          "avgEngagementSec": 10.31
+        }
+      ],
+      "topCountries": [
+        {
+          "label": "United States",
+          "value": 347,
+          "pct": 49.4
+        },
+        {
+          "label": "Singapore",
+          "value": 170,
+          "pct": 24.2
+        },
+        {
+          "label": "China",
+          "value": 62,
+          "pct": 8.8
+        },
+        {
+          "label": "Sweden",
+          "value": 20,
+          "pct": 2.8
+        },
+        {
+          "label": "Canada",
+          "value": 17,
+          "pct": 2.4
+        },
+        {
+          "label": "(not set)",
+          "value": 7,
+          "pct": 1.0
+        },
+        {
+          "label": "South Korea",
+          "value": 7,
+          "pct": 1.0
+        },
+        {
+          "label": "Germany",
+          "value": 6,
+          "pct": 0.9
+        },
+        {
+          "label": "United Kingdom",
+          "value": 6,
+          "pct": 0.9
+        },
+        {
+          "label": "Vietnam",
+          "value": 6,
+          "pct": 0.9
+        }
+      ]
+    },
+    "search": {
+      "kpis": [
+        {
+          "label": "Clicks",
+          "value": "95",
+          "deltaPct": -7.8
+        },
+        {
+          "label": "Impressions",
+          "value": "3,150",
+          "deltaPct": 15.6
+        },
+        {
+          "label": "CTR",
+          "value": "3.0%",
+          "deltaPct": -20.2
+        },
+        {
+          "label": "Avg. position",
+          "value": "10.6",
+          "invertDelta": true,
+          "deltaPct": -2.0
+        }
+      ],
+      "trend": [
+        {
+          "date": "2026-09-29",
+          "clicks": 1,
+          "impressions": 144
+        },
+        {
+          "date": "2026-09-30",
+          "clicks": 3,
+          "impressions": 117
+        },
+        {
+          "date": "2026-10-01",
+          "clicks": 3,
+          "impressions": 143
+        },
+        {
+          "date": "2026-10-02",
+          "clicks": 2,
+          "impressions": 141
+        },
+        {
+          "date": "2026-10-03",
+          "clicks": 2,
+          "impressions": 126
+        },
+        {
+          "date": "2026-10-04",
+          "clicks": 4,
+          "impressions": 115
+        },
+        {
+          "date": "2026-10-05",
+          "clicks": 4,
+          "impressions": 124
+        },
+        {
+          "date": "2026-10-06",
+          "clicks": 2,
+          "impressions": 127
+        },
+        {
+          "date": "2026-10-07",
+          "clicks": 4,
+          "impressions": 95
+        },
+        {
+          "date": "2026-10-08",
+          "clicks": 7,
+          "impressions": 119
+        },
+        {
+          "date": "2026-10-09",
+          "clicks": 4,
+          "impressions": 106
+        },
+        {
+          "date": "2026-10-10",
+          "clicks": 2,
+          "impressions": 152
+        },
+        {
+          "date": "2026-10-11",
+          "clicks": 0,
+          "impressions": 113
+        },
+        {
+          "date": "2026-10-12",
+          "clicks": 3,
+          "impressions": 107
+        },
+        {
+          "date": "2026-10-13",
+          "clicks": 7,
+          "impressions": 104
+        },
+        {
+          "date": "2026-10-14",
+          "clicks": 5,
+          "impressions": 108
+        },
+        {
+          "date": "2026-10-15",
+          "clicks": 4,
+          "impressions": 111
+        },
+        {
+          "date": "2026-10-16",
+          "clicks": 2,
+          "impressions": 109
+        },
+        {
+          "date": "2026-10-17",
+          "clicks": 4,
+          "impressions": 75
+        },
+        {
+          "date": "2026-10-18",
+          "clicks": 3,
+          "impressions": 110
+        },
+        {
+          "date": "2026-10-19",
+          "clicks": 3,
+          "impressions": 124
+        },
+        {
+          "date": "2026-10-20",
+          "clicks": 4,
+          "impressions": 83
+        },
+        {
+          "date": "2026-10-21",
+          "clicks": 5,
+          "impressions": 95
+        },
+        {
+          "date": "2026-10-22",
+          "clicks": 7,
+          "impressions": 119
+        },
+        {
+          "date": "2026-10-23",
+          "clicks": 3,
+          "impressions": 81
+        },
+        {
+          "date": "2026-10-24",
+          "clicks": 2,
+          "impressions": 89
+        },
+        {
+          "date": "2026-10-25",
+          "clicks": 1,
+          "impressions": 75
+        },
+        {
+          "date": "2026-10-26",
+          "clicks": 4,
+          "impressions": 138
+        }
+      ],
+      "topQueries": [
+        {
+          "query": "canary foundation",
+          "clicks": 27,
+          "impressions": 83,
+          "ctr": 32.53012048192771,
+          "position": 1.0120481927710843
+        },
+        {
+          "query": "hilary valentine",
+          "clicks": 15,
+          "impressions": 191,
+          "ctr": 7.853403141361256,
+          "position": 2.9476439790575917
+        },
+        {
+          "query": "don listwin",
+          "clicks": 1,
+          "impressions": 70,
+          "ctr": 1.4285714285714286,
+          "position": 4.857142857142858
+        },
+        {
+          "query": "canary center stanford",
+          "clicks": 1,
+          "impressions": 32,
+          "ctr": 3.125,
+          "position": 6.53125
+        },
+        {
+          "query": "canary pass",
+          "clicks": 1,
+          "impressions": 23,
+          "ctr": 4.3478260869565215,
+          "position": 6
+        },
+        {
+          "query": "don valentine children",
+          "clicks": 1,
+          "impressions": 1,
+          "ctr": 100,
+          "position": 1
+        },
+        {
+          "query": "darwin chain diagnostics canary 2026",
+          "clicks": 0,
+          "impressions": 115,
+          "ctr": 0,
+          "position": 3.6782608695652175
+        },
+        {
+          "query": "tumor research",
+          "clicks": 0,
+          "impressions": 65,
+          "ctr": 0,
+          "position": 23.2
+        },
+        {
+          "query": "sam gambhir",
+          "clicks": 0,
+          "impressions": 47,
+          "ctr": 0,
+          "position": 1
+        },
+        {
+          "query": "canary center",
+          "clicks": 0,
+          "impressions": 38,
+          "ctr": 0,
+          "position": 2.9210526315789473
+        }
+      ],
+      "topPages": [
+        {
+          "page": "https://canaryfoundation.org/",
+          "clicks": 40,
+          "impressions": 792,
+          "ctr": 5.05050505050505,
+          "position": 7.85479797979798
+        },
+        {
+          "page": "https://canaryfoundation.org/about/board-directors",
+          "clicks": 24,
+          "impressions": 323,
+          "ctr": 7.430340557275541,
+          "position": 4.142414860681114
+        },
+        {
+          "page": "https://canaryfoundation.org/oral-history",
+          "clicks": 8,
+          "impressions": 254,
+          "ctr": 3.149606299212598,
+          "position": 4.783464566929133
+        },
+        {
+          "page": "https://canaryfoundation.org/science/centers/stanford",
+          "clicks": 4,
+          "impressions": 258,
+          "ctr": 1.550387596899225,
+          "position": 4.937984496124031
+        },
+        {
+          "page": "https://canaryfoundation.org/about/overview",
+          "clicks": 3,
+          "impressions": 223,
+          "ctr": 1.345291479820628,
+          "position": 3.0896860986547083
+        },
+        {
+          "page": "https://canaryfoundation.org/science/centers/stanford/biomarkers",
+          "clicks": 3,
+          "impressions": 87,
+          "ctr": 3.4482758620689653,
+          "position": 16.82758620689655
+        },
+        {
+          "page": "https://canaryfoundation.org/science/centers",
+          "clicks": 2,
+          "impressions": 185,
+          "ctr": 1.0810810810810811,
+          "position": 7.65945945945946
+        },
+        {
+          "page": "https://canaryfoundation.org/about/staff",
+          "clicks": 2,
+          "impressions": 161,
+          "ctr": 1.2422360248447204,
+          "position": 3.751552795031056
+        },
+        {
+          "page": "https://canaryfoundation.org/science/programs/tumors/prostate",
+          "clicks": 2,
+          "impressions": 119,
+          "ctr": 1.680672268907563,
+          "position": 12.252100840336135
+        },
+        {
+          "page": "https://canaryfoundation.org/blog/canary-foundation-program-report-2025",
+          "clicks": 2,
+          "impressions": 93,
+          "ctr": 2.1505376344086025,
+          "position": 8.419354838709676
+        }
+      ]
+    }
+  },
+  "main-house": {
+    "siteId": "main-house",
+    "review": "partial",
+    "note": "Search Console is filtered to https://mainhouse.canarycove.com/ inside the Canary Cove domain property. Final search data: Sep 29\u2013Oct 26, compared with Sep 1\u201328. No Main House hostname events were returned by the three accessible Cove GA4 properties for Sep 2\u2013Oct 27; GA4 measurements remain unavailable.",
+    "periodLabel": "Search-only snapshot",
+    "comparisonLabel": "vs. Sep 1\u201328, 2026",
+    "rangeStart": "2026-09-30",
+    "rangeEnd": "2026-10-27",
+    "searchRangeStart": "2026-09-29",
+    "searchRangeEnd": "2026-10-26",
+    "updatedAt": "2026-10-28T17:08:58Z",
+    "analytics": {
+      "kpis": [],
+      "trafficTrend": [],
+      "channels": [],
+      "devices": [],
+      "topPages": [],
+      "topCountries": []
+    },
+    "search": {
+      "kpis": [
+        {
+          "label": "Clicks",
+          "value": "0"
+        },
+        {
+          "label": "Impressions",
+          "value": "7",
+          "deltaPct": -58.8
+        },
+        {
+          "label": "CTR",
+          "value": "0.0%"
+        },
+        {
+          "label": "Avg. position",
+          "value": "3.3",
+          "invertDelta": true,
+          "deltaPct": 29.9
+        }
+      ],
+      "trend": [
+        {
+          "date": "2026-09-29",
+          "clicks": 0,
+          "impressions": 0
+        },
+        {
+          "date": "2026-09-30",
+          "clicks": 0,
+          "impressions": 1
+        },
+        {
+          "date": "2026-10-01",
+          "clicks": 0,
+          "impressions": 0
+        },
+        {
+          "date": "2026-10-02",
+          "clicks": 0,
+          "impressions": 0
+        },
+        {
+          "date": "2026-10-03",
+          "clicks": 0,
+          "impressions": 0
+        },
+        {
+          "date": "2026-10-04",
+          "clicks": 0,
+          "impressions": 0
+        },
+        {
+          "date": "2026-10-05",
+          "clicks": 0,
+          "impressions": 0
+        },
+        {
+          "date": "2026-10-06",
+          "clicks": 0,
+          "impressions": 1
+        },
+        {
+          "date": "2026-10-07",
+          "clicks": 0,
+          "impressions": 0
+        },
+        {
+          "date": "2026-10-08",
+          "clicks": 0,
+          "impressions": 0
+        },
+        {
+          "date": "2026-10-09",
+          "clicks": 0,
+          "impressions": 0
+        },
+        {
+          "date": "2026-10-10",
+          "clicks": 0,
+          "impressions": 1
+        },
+        {
+          "date": "2026-10-11",
+          "clicks": 0,
+          "impressions": 0
+        },
+        {
+          "date": "2026-10-12",
+          "clicks": 0,
+          "impressions": 0
+        },
+        {
+          "date": "2026-10-13",
+          "clicks": 0,
+          "impressions": 0
+        },
+        {
+          "date": "2026-10-14",
+          "clicks": 0,
+          "impressions": 0
+        },
+        {
+          "date": "2026-10-15",
+          "clicks": 0,
+          "impressions": 0
+        },
+        {
+          "date": "2026-10-16",
+          "clicks": 0,
+          "impressions": 0
+        },
+        {
+          "date": "2026-10-17",
+          "clicks": 0,
+          "impressions": 0
+        },
+        {
+          "date": "2026-10-18",
+          "clicks": 0,
+          "impressions": 0
+        },
+        {
+          "date": "2026-10-19",
+          "clicks": 0,
+          "impressions": 0
+        },
+        {
+          "date": "2026-10-20",
+          "clicks": 0,
+          "impressions": 0
+        },
+        {
+          "date": "2026-10-21",
+          "clicks": 0,
+          "impressions": 2
+        },
+        {
+          "date": "2026-10-22",
+          "clicks": 0,
+          "impressions": 0
+        },
+        {
+          "date": "2026-10-23",
+          "clicks": 0,
+          "impressions": 0
+        },
+        {
+          "date": "2026-10-24",
+          "clicks": 0,
+          "impressions": 2
+        },
+        {
+          "date": "2026-10-25",
+          "clicks": 0,
+          "impressions": 0
+        },
+        {
+          "date": "2026-10-26",
+          "clicks": 0,
+          "impressions": 0
+        }
+      ],
+      "topQueries": [],
+      "topPages": [
+        {
+          "page": "https://mainhouse.canarycove.com/",
+          "clicks": 0,
+          "impressions": 7,
+          "ctr": 0,
+          "position": 3.2857142857142856
+        }
+      ]
+    }
+  }
+}
