@@ -20,6 +20,7 @@ export function SiteLogo({ site, className }: { site: Site; className?: string }
         alt={`${site.name} logo`}
         fill
         sizes="48px"
+        unoptimized={site.logo.endsWith(".svg")}
         className="object-contain p-0.5"
       />
     </span>

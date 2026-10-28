@@ -16,12 +16,12 @@ export function TopPagesTable({ pages }: { pages: TopPage[] }) {
         <TableRow>
           <TableHead>Page</TableHead>
           <TableHead className="text-right">Views</TableHead>
-          <TableHead className="text-right">Avg. time</TableHead>
+          <TableHead className="text-right">Engagement / user</TableHead>
         </TableRow>
       </TableHeader>
       <TableBody>
         {pages.map((p) => (
-          <TableRow key={p.path}>
+          <TableRow key={`${p.path}:${p.title}`}>
             <TableCell>
               <div className="font-medium leading-tight">{p.title}</div>
               <div className="font-mono text-xs text-muted-foreground">{p.path}</div>

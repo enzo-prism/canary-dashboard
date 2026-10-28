@@ -19,9 +19,9 @@ export function Panel({
 }) {
   return (
     <Card className={className}>
-      <CardHeader className="flex flex-row items-start justify-between gap-2 space-y-0">
-        <div className="space-y-1">
-          <CardTitle className="flex items-center gap-2 text-base">
+      <CardHeader className="flex flex-row items-start justify-between gap-4 space-y-0">
+        <div className="space-y-2">
+          <CardTitle className="flex items-center gap-2 text-lg font-semibold">
             {Icon && <Icon className="size-4 text-muted-foreground" />}
             {title}
           </CardTitle>

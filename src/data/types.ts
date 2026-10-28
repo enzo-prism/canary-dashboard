@@ -93,21 +93,63 @@ export type SearchSnapshot = {
 };
 
 export type LeadsSnapshot = {
+  description?: string;
+  sourceSummary?: string;
   kpis: Kpi[];
   /** Daily lead counts across the period. */
   trend: TrendPoint[];
   recent: Lead[];
 };
 
+export type SnapshotReview = "reviewed" | "partial" | "empty";
+
 export type SiteSnapshot = {
   siteId: SiteId;
+  /** reviewed = GA4 and search; partial = search only; empty = no reviewed measurements. */
+  review: SnapshotReview;
+  /** Optional ops note shown on data health (property IDs, gaps). */
+  note?: string;
   periodLabel: string;
   comparisonLabel: string;
   rangeStart: string; // ISO date
   rangeEnd: string; // ISO date
-  /** When this snapshot was last refreshed by the Prism team. */
-  updatedAt: string; // ISO datetime
+  searchRangeStart?: string;
+  searchRangeEnd?: string;
+  /** When the GA / GSC snapshot was last refreshed by the Prism team. */
+  updatedAt?: string; // ISO datetime
+  /** When the leads export was reviewed, if different from updatedAt. */
+  leadsUpdatedAt?: string;
   analytics: AnalyticsSnapshot;
   search: SearchSnapshot;
   leads?: LeadsSnapshot;
+};
+
+export type PortfolioLeadSummary = {
+  volume: string;
+  unique?: string;
+  booking?: string;
+};
+
+export type PortfolioSiteSummary = {
+  siteId: SiteId;
+  review: SnapshotReview;
+  note?: string;
+  updatedAt?: string;
+  leadsUpdatedAt?: string;
+  periodLabel: string;
+  users: string | null;
+  usersDelta?: number;
+  sessions: string | null;
+  sessionsDelta?: number;
+  clicks: string | null;
+  clicksDelta?: number;
+  leads: PortfolioLeadSummary | null;
+};
+
+export type DataHealthRow = {
+  siteId: SiteId;
+  review: SnapshotReview;
+  updatedAt?: string;
+  leadsUpdatedAt?: string;
+  note?: string;
 };
