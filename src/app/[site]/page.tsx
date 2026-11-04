@@ -136,7 +136,7 @@ export default async function SitePage({
 
           <Panel
             title="Clicks & impressions"
-            description="Final Search data for Sep 29–Oct 26, compared with Sep 1–28. Impressions use the right axis."
+            description="Final Search data for Oct 5–Nov 1, compared with Sep 7–Oct 4. Impressions use the right axis."
             icon={Search}
           >
             {empty || search.trend.length === 0 ? (

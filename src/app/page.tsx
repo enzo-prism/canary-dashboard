@@ -79,7 +79,7 @@ function ProjectCard({ row }: { row: PortfolioSiteSummary }) {
           <div className="grid grid-cols-2 gap-6 border-t border-border pt-6 sm:grid-cols-3">
             <Metric label="Users" value={row.users} delta={row.usersDelta} />
             <Metric label="Sessions" value={row.sessions} delta={row.sessionsDelta} />
-            <Metric label="Search clicks · Sep 29–Oct 26" value={row.clicks} delta={row.clicksDelta} />
+            <Metric label="Search clicks · Oct 5–Nov 1" value={row.clicks} delta={row.clicksDelta} />
             {row.leads && (
               <>
                 <Metric label="Inquiries · all time" value={row.leads.volume} />
@@ -162,7 +162,7 @@ export default function OverviewPage() {
           <div className="font-medium text-foreground">Last 28 days</div>
           <div className="mt-2">
             GA4: {formatDateLong(rangeStart())} – {formatDateLong(RANGE_END)}
-            <br />Search: Sep 29 – Oct 26, 2026
+            <br />Search: Oct 5 – Nov 1, 2026
           </div>
         </div>
       </div>
