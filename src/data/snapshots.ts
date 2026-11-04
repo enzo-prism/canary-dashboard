@@ -14,13 +14,13 @@ const SNAPSHOTS: Record<SiteId, SiteSnapshot> = {
     leadsUpdatedAt: reviewedLeads.exportedAt,
     leads: {
       description: `Reviewed genuine inquiries, ${formatDateLong(reviewedLeads.periodStart)} through ${formatDateLong(reviewedLeads.periodEnd)}. Dates use Pacific time. All-time headline counts cover the intake history since April 20, 2026.`,
-      sourceSummary: `${reviewedLeads.rawRows} operational Formspree rows: ${reviewedLeads.formspreeVisibleRows} genuine and ${reviewedLeads.filteredRows} spam/test; ${reviewedLeads.excludedEmailCaptureRows} email captures excluded. Plus ${reviewedLeads.heldRows} preserved Typeform inquiry. ${reviewedLeads.reviewRows} unresolved reviews.`,
+      sourceSummary: `${reviewedLeads.rawRows} operational Formspree rows: ${reviewedLeads.formspreeVisibleRows} genuine and ${reviewedLeads.filteredRows} spam, test or non-guest outreach; ${reviewedLeads.excludedEmailCaptureRows} email captures excluded. Plus ${reviewedLeads.heldRows} preserved Typeform inquiry. ${reviewedLeads.reviewRows} unresolved reviews.`,
       kpis: [
         { label: "Total inquiries", value: String(reviewedLeads.totalInquiries), caption: "All time · genuine inquiries" },
         { label: "Unique senders", value: String(reviewedLeads.uniqueSenders), caption: "All time · email identities" },
         { label: "Booking requests", value: String(reviewedLeads.bookingRequests), caption: "All time · inquiry submissions" },
         { label: "Contact requests", value: String(reviewedLeads.contactRequests), caption: "All time · inquiry submissions" },
-        { label: "Period inquiries", value: String(reviewedLeads.periodInquiries), caption: "Sep 30 – Oct 27, 2026" },
+        { label: "Period inquiries", value: String(reviewedLeads.periodInquiries), caption: "Oct 6 – Nov 2, 2026" },
       ],
       trend: reviewedLeads.dailyTrend.map(({ date, inquiries }) => ({ date, leads: inquiries })),
       recent: [],
